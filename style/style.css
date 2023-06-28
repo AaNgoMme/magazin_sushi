@@ -1,0 +1,201 @@
+@import "nullstyle.css";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  border-bottom: solid 1px rgb(167, 167, 167);
+}
+nav .container-fluid .navbar-toggler {
+  background-color: #ea382c;
+  border-radius: 50%;
+  border: 0;
+}
+nav .container-fluid .lol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .container-fluid .image-logo {
+  width: 100%;
+  height: 45px;
+}
+nav .container-fluid .right-nav {
+  margin-right: 10px;
+}
+nav .container-fluid .right-nav .cart-text {
+  font-size: 14px;
+}
+nav .container-fluid .right-nav img {
+  width: 100%;
+  height: 30px;
+}
+nav .container-fluid .right-nav span {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-small-text {
+  font-size: small;
+  color: rgb(145, 145, 145);
+}
+nav .nav-menu ul li a {
+  font-size: 18px;
+  margin: 6px;
+}
+nav .main-line {
+  background-color: rgb(167, 167, 167);
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+}
+nav .main-number h6 {
+  font-size: small;
+  color: rgb(145, 145, 145);
+  margin: 20px 0 0px 0;
+}
+nav .main-number p {
+  font-size: 20px;
+  margin: 10px 0 10px 0;
+}
+nav .nav-form-seach button {
+  background-color: #e05348;
+  border-color: #e05348;
+  color: #000000;
+}
+
+.main-nav {
+  background-color: white;
+}
+
+.carousel-inner {
+  border-radius: 2%;
+}
+
+.header-carousel {
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-carousel .header-carousel-image {
+  width: 100%;
+  border-radius: 15px;
+}
+.header-carousel .carousel-indicators {
+  width: 80%;
+  border: 5px;
+  border-color: #000000;
+}
+
+.nav-sticky :hover {
+  color: #ea382c;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #ea382c;
+}
+
+.nav-sticky {
+  position: sticky;
+  top: 88px;
+  background-color: #ffffff;
+  height: 52px;
+  padding-top: 10px;
+  margin-top: 20px;
+  padding-left: 20px;
+  z-index: 1;
+}
+.nav-sticky li button {
+  color: #000000;
+}
+.nav-sticky li button:active {
+  background-color: #ea382c;
+}
+
+main .cont {
+  margin-left: 30px;
+}
+main .cont .row {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+main .cont .row .main-title h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+}
+main .cont .row .main-title h2 span {
+  position: absolute;
+  top: -180px;
+}
+main .cont .row .card .card-img-top {
+  width: 100%;
+}
+main .cont .row .card .btn {
+  background-color: #ea382c;
+  color: #ffffff;
+  width: 60%;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 15px;
+}
+main .cont .row .card .btn:hover {
+  background-color: silver;
+}
+main .cont .row .card .card-body .card-title {
+  font-size: 18px;
+  color: #2b2b2b;
+}
+main .cont .row .card .card-body .card-text {
+  color: rgb(145, 145, 145);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .cont .row .card .card-body a {
+  text-decoration: none;
+}
+main .cont .row .card:hover {
+  border: 1px;
+}
+main .cont .row .card-first {
+  margin: 0px;
+}
+main .cont .row .main-line {
+  background-color: rgb(167, 167, 167);
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+}
+
+@media (max-width: 992px) {
+  nav .nav-login {
+    display: none;
+  }
+  .w-100 {
+    height: 320px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  nav .container-fluid .navbar-phone {
+    display: none;
+  }
+  nav .nav-sity-inf li a {
+    font-size: 16px;
+  }
+  nav .nav-sity-inf {
+    display: none;
+  }
+}
+@media only screen and (max-width: 374px) {
+  nav .nav-cart {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

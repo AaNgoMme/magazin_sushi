@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar fixed-top main-nav">
+            <div class="container-fluid">
+                <div class="d-flex flex-row mb-3">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand me-auto ms-4 lol image-logo1" href="index.html">
+                        <img src="image/logo.jpg" class="image-logo">
+                    </a>
+                    <ul class="nav-sity-inf">
+                        <li><a class="navbar-brand me-auto lol ms-3" href="#">г. Симферополь</li>
+                        <li class="nav-small-text">Каждый день 10:00-22:00</li> </a>
+                    </ul>
+                    <a class="navbar-brand lol navbar-phone ms-5" href="#">+7 (978) 597 18 62</a>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="image/logo.jpg"
+                                class="image-logo">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body nav-menu">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active rr" aria-current="page" href="#">Условия Доставки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Наши адреса</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Информация об оплате</a>
+                            </li>
+
+                        </ul>
+                        <div class="main-line"></div>
+                        <div class="main-number">
+                            <h6>Связаться с нами</h6>
+                            <p>+7 (978) 597 18 62</p>
+                            <p>+7 (978) 597 18 62</p>
+                        </div>
+
+                        <form class="d-flex mt-3 nav-form-seach" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Поиск</button>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="ms-auto d-flex flex-row-reverse right-nav">
+                    <div><a class="nav-link active nav-login" aria-current="page" href="#">
+                            <img src="image/cart.png">
+                            <span class="navbar-brand cart-text">Корзина</span></a>
+                    </div>
+                    <div><a class="nav-link active nav-cart" aria-current="page" href="#">
+                            <img src="image/cart.png">
+                            <span class="navbar-brand cart-text">Корзина</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide header-carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner header-carousel-image">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="image/header1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image/header2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image/header3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="image/header4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+
+    </header>
+
+    <main class="main-content">
+        <ul class="nav nav-pills mb-3 nav-sticky" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"
+                    onClick="window.location='#action-and-new'">Акции и новинки</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
+                    onClick="window.location='#sushi'">Суши</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"
+                    onClick="window.location='#prostie-sushi'">Простые</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
+                    onClick="window.location='#zapechenie-sushi'">Запеченные</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
+                    onClick="window.location='#slojnie-sushi'">Сложные</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Сеты</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Пицца</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">WOK</button>
+            </li>
+        </ul>
+
+
+        <div class="cont">
+            <!--Action and new-->
+            <div class="row ms-3 me-3">
+                <div class="main-title">
+                    <h2><span id="action-and-new"></span>Акции и новинки</h2>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Сет Токио</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">840 гр</p>
+                            </a>
+                            <a href="#" class="btn">1080 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Сет Токио</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">840 гр</p>
+                            </a>
+                            <a href="#" class="btn">1080 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Сет Токио</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">840 гр</p>
+                            </a>
+                            <a href="#" class="btn">1080 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Сет Токио</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">840 гр</p>
+                            </a>
+                            <a href="#" class="btn">1080 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Сет Токио</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">840 гр</p>
+                            </a>
+                            <a href="#" class="btn">1080 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Сет Токио</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">840 гр</p>
+                            </a>
+                            <a href="#" class="btn">1080 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-line"></div>
+                <!--Sushi-->
+
+                <div class="main-title">
+                    <h2><span id="sushi"></span>Суши</h2>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart21.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Суши тунец</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">45 гр</p>
+                            </a>
+                            <a href="#" class="btn">90 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart22.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Суши лосось</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">45 гр</p>
+                            </a>
+                            <a href="#" class="btn">90 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart23.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Суши креветка</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">45 гр</p>
+                            </a>
+                            <a href="#" class="btn">90 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart24.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Суши угорь</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">45 гр</p>
+                            </a>
+                            <a href="#" class="btn">100 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart25.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Суши спайси</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">50 гр</p>
+                            </a>
+                            <a href="#" class="btn">100 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-line"></div>
+
+                <!--Prostie sushi-->
+
+
+                <div class="main-title">
+                    <h2><span id="prostie-sushi"></span>Простые суши</h2>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart31.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Простой с крабом</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">150 гр</p>
+                            </a>
+                            <a href="#" class="btn">130 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart32.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Простой с огурцом</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">120 гр</p>
+                            </a>
+                            <a href="#" class="btn">110 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart33.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Простой с креветкой</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">150 гр</p>
+                            </a>
+                            <a href="#" class="btn">180 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart34.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Простой с лососем</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">150 гр</p>
+                            </a>
+                            <a href="#" class="btn">190 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart35.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Простой с тунцом</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">150 гр</p>
+                            </a>
+                            <a href="#" class="btn">190 ₽</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart36.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">простой с угрем</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">150 гр</p>
+                            </a>
+                            <a href="#" class="btn">200 ₽</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart37.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Острый ролл</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">150 гр</p>
+                            </a>
+                            <a href="#" class="btn">190 ₽</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-line"></div>
+
+                <!--Zapechenie sushi-->
+
+
+
+                <div class="main-title">
+                    <h2><span id="zapechenie-sushi"></span>Запеченные суши</h2>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart41.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">С креветкой</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">310 гр</p>
+                            </a>
+                            <a href="#" class="btn">480 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart42.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">С лососем</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">310 гр</p>
+                            </a>
+                            <a href="#" class="btn">485 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart43.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">С угрем</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">310 гр</p>
+                            </a>
+                            <a href="#" class="btn">490 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart44.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Банито Запеченный</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">310 гр</p>
+                            </a>
+                            <a href="#" class="btn">490 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart45.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Филадельфия гриль</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">290 гр</p>
+                            </a>
+                            <a href="#" class="btn">470 ₽</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-line"></div>
+
+                <!--Slojnie sushi-->
+
+
+
+                <div class="main-title">
+                    <h2><span id="slojnie-sushi"></span>Сложные суши</h2>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart51.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Калифорния классическая</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">270 гр</p>
+                            </a>
+                            <a href="#" class="btn">350 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart52.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Нежный</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">280 гр</p>
+                            </a>
+                            <a href="#" class="btn">360 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart53.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Аляска</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">260 гр</p>
+                            </a>
+                            <a href="#" class="btn">380 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart54.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Банито с тунцом</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">260 гр</p>
+                            </a>
+                            <a href="#" class="btn">380 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart55.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Чиз лосось</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">270 гр</p>
+                            </a>
+                            <a href="#" class="btn">385 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart56.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Калифорния с тунцом</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">270 гр</p>
+                            </a>
+                            <a href="#" class="btn">385 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart57.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Сатори</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">300 гр</p>
+                            </a>
+                            <a href="#" class="btn">385 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart58.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Калифорния с лососем</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">270 гр</p>
+                            </a>
+                            <a href="#" class="btn">390 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart59.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Филадельфия спешл</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">280 гр</p>
+                            </a>
+                            <a href="#" class="btn">360 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart510.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Фреш</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">280 гр</p>
+                            </a>
+                            <a href="#" class="btn">360 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart511.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Норвежский</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">280 гр</p>
+                            </a>
+                            <a href="#" class="btn">380 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart512.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Окинава</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">285 гр</p>
+                            </a>
+                            <a href="#" class="btn">385 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart513.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Филадельфия классическая</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">300 гр</p>
+                            </a>
+                            <a href="#" class="btn">385 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart514.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Калифорния с креветкой</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">270 гр</p>
+                            </a>
+                            <a href="#" class="btn">385 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart515.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Мексиканский</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">270 гр</p>
+                            </a>
+                            <a href="#" class="btn">390 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart516.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Осака</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">285 гр</p>
+                            </a>
+                            <a href="#" class="btn">395 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart517.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Сливочный тунец</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">280 гр</p>
+                            </a>
+                            <a href="#" class="btn">400 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart518.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Самурай</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">290 гр</p>
+                            </a>
+                            <a href="#" class="btn">400 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart519.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Калифорния с угрем</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">270 гр</p>
+                            </a>
+                            <a href="#" class="btn">410 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart520.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Атлантический</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">310 гр</p>
+                            </a>
+                            <a href="#" class="btn">410 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart521.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Романтик</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">300 гр</p>
+                            </a>
+                            <a href="#" class="btn">470 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart522.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Рок-н-ролл</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">295 гр</p>
+                            </a>
+                            <a href="#" class="btn">480 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart523.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Филадельфия с угрем</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">305 гр</p>
+                            </a>
+                            <a href="#" class="btn">490 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart524.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Рассвет</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">285 гр</p>
+                            </a>
+                            <a href="#" class="btn">500 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart525.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Бостон</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">275 гр</p>
+                            </a>
+                            <a href="#" class="btn">400 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white card-first" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart526.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Ямайка</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">300 гр</p>
+                            </a>
+                            <a href="#" class="btn">405 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart527.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Банито с угрем</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">270 гр</p>
+                            </a>
+                            <a href="#" class="btn">410 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart528.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Нью-йорк</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">295 гр</p>
+                            </a>
+                            <a href="#" class="btn">430 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart529.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Салмон люкс</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">295 гр</p>
+                            </a>
+                            <a href="#" class="btn">470 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart530.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Чиз угорь</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">295 гр</p>
+                            </a>
+                            <a href="#" class="btn">485 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart531.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Император</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">310 гр</p>
+                            </a>
+                            <a href="#" class="btn">490 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                    <div class="card border-white" style="width: 100%;">
+                        <a href="#"><img src="image/action-cart532.jpg" class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">Золотой дракон</h5>
+                            </a>
+                            <a href="#">
+                                <p class="card-text">305 гр</p>
+                            </a>
+                            <a href="#" class="btn">510 ₽</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="main-line"></div>
+
+            </div>
+    </main>
+
+</body>
+
+</html>
