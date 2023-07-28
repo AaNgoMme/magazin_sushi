@@ -9,12 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
 
 <body>
-
     <header>
         <nav class="navbar fixed-top main-nav">
             <div class="container-fluid">
@@ -31,7 +31,7 @@
                         <li><a class="navbar-brand me-auto lol ms-3" href="#">г. Симферополь</li>
                         <li class="nav-small-text">Каждый день 10:00-22:00</li> </a>
                     </ul>
-                    <a class="navbar-brand lol navbar-phone ms-5" href="#">+7 (978) 597 18 62</a>
+                    <a class="navbar-brand lol navbar-phone ms-5" href="tel:+79785971862">+7(978)-597-18-62</a>
                 </div>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -61,8 +61,8 @@
                         <div class="main-line"></div>
                         <div class="main-number">
                             <h6>Связаться с нами</h6>
-                            <p>+7 (978) 597 18 62</p>
-                            <p>+7 (978) 597 18 62</p>
+                            <p><a href="tel:+79785971862">+7(978)-597-18-62</a></p>
+                            <p><a href="tel:+79785971862">+7(978)-597-18-62</a></p>
                         </div>
 
                         <form class="d-flex mt-3 nav-form-seach" role="search">
@@ -73,18 +73,15 @@
 
                 </div>
                 <div class="ms-auto d-flex flex-row-reverse right-nav">
-                    <div><a class="nav-link active nav-login" aria-current="page" href="#">
+                    <div><a class="nav-link active nav-login" aria-current="page" href="#" data-bs-toggle="modal"
+                            data-bs-target="#modalCart">
                             <img src="image/cart.png">
                             <span class="navbar-brand cart-text">Корзина</span></a>
                     </div>
-                    <div><a class="nav-link active nav-cart" aria-current="page" href="#">
-                            <img src="image/cart.png">
-                            <span class="navbar-brand cart-text">Корзина</span></a>
-                    </div>
+
                 </div>
             </div>
         </nav>
-
 
         <div id="carouselExampleIndicators" class="carousel slide header-carousel" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -123,46 +120,71 @@
             </button>
         </div>
 
-    </header>
+        <!-- Modal Basket-->
+        <div class="modal fade" id="modalCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Корзина</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--CART BODY-->
+                        <!---->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Продолжить
+                            покупки</button>
+                        <button type="button" class="btn btn-primary"
+                            style="background-color: #ea382c; border-color: #ea382c;">Перейти к оформлению</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
 
+    </header>
     <main class="main-content">
         <ul class="nav nav-pills mb-3 nav-sticky" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"
-                    onClick="window.location='#action-and-new'">Акции и новинки</button>
+                <button class="nav-link nav-action active" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="false" onClick="window.location='#action-and-new'">Акции и новинки</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
-                    onClick="window.location='#sushi'">Суши</button>
+                <button class="nav-link nav-sushi" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false" onClick="window.location='#sushi'">Суши</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"
-                    onClick="window.location='#prostie-sushi'">Простые</button>
+                <button class="nav-link nav-prostie" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false" onClick="window.location='#prostie-sushi'">Простые</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
-                    onClick="window.location='#zapechenie-sushi'">Запеченные</button>
+                <button class="nav-link nav-zapechenie" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false" onClick="window.location='#zapechenie-sushi'">Запеченные</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false"
-                    onClick="window.location='#slojnie-sushi'">Сложные</button>
+                <button class="nav-link nav-slojnie" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false" onClick="window.location='#slojnie-sushi'">Сложные</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Сеты</button>
+                <button class="nav-link nav-sets" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Сеты</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Пицца</button>
+                <button class="nav-link nav-pizza" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">Пицца</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">WOK</button>
+                <button class="nav-link nav-wok" id="pills-contact-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                    aria-selected="false">WOK
             </li>
         </ul>
 
@@ -174,92 +196,110 @@
                     <h2><span id="action-and-new"></span>Акции и новинки</h2>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Сет Токио</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">840 гр</p>
                             </a>
-                            <a href="#" class="btn">1080 ₽</a>
+                            <a class="btn btn-price">1080 ₽</span></a>
+                            <span class="currency" hidden>1080</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <a href="#"><img src="image/action-cart2.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Сет Токио</h5>
+                                <h5 class="card-title">Сет Остров</h5>
                             </a>
                             <a href="#">
-                                <p class="card-text">840 гр</p>
+                                <p class="card-text">1045 гр</p>
                             </a>
-                            <a href="#" class="btn">1080 ₽</a>
+                            <a href="#" class="btn btn-price">1100 ₽</a>
+                            <span class="currency" hidden>1100</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <a href="#"><img src="image/action-cart3.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Сет Токио</h5>
+                                <h5 class="card-title">Сет Филадельфия</h5>
                             </a>
                             <a href="#">
-                                <p class="card-text">840 гр</p>
+                                <p class="card-text">865 гр</p>
                             </a>
-                            <a href="#" class="btn">1080 ₽</a>
+                            <a href="#" class="btn btn-price">1125 ₽</a>
+                            <span class="currency" hidden>1125</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <a href="#"><img src="image/action-cart4.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Сет Токио</h5>
+                                <h5 class="card-title">Сет Калифорния</h5>
                             </a>
                             <a href="#">
-                                <p class="card-text">840 гр</p>
+                                <p class="card-text">1080 гр</p>
                             </a>
-                            <a href="#" class="btn">1080 ₽</a>
+                            <a href="#" class="btn btn-price">1395 ₽</a>
+                            <span class="currency" hidden>1395</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <a href="#"><img src="image/action-cart5.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Сет Токио</h5>
+                                <h5 class="card-title">Сет №1</h5>
                             </a>
                             <a href="#">
-                                <p class="card-text">840 гр</p>
+                                <p class="card-text">415 гр</p>
                             </a>
-                            <a href="#" class="btn">1080 ₽</a>
+                            <a href="#" class="btn btn-price">445 ₽</a>
+                            <span class="currency" hidden>445</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart1.jpg" class="card-img-top" alt="..."></a>
+                        <a href="#"><img src="image/action-cart6.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
                             <a href="#">
-                                <h5 class="card-title">Сет Токио</h5>
+                                <h5 class="card-title">Сет Спайси</h5>
                             </a>
                             <a href="#">
-                                <p class="card-text">840 гр</p>
+                                <p class="card-text">585 гр</p>
                             </a>
-                            <a href="#" class="btn">1080 ₽</a>
+                            <a href="#" class="btn btn-price">785 ₽</a>
+                            <span class="currency" hidden>785</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
@@ -271,7 +311,8 @@
                     <h2><span id="sushi"></span>Суши</h2>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart21.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -281,12 +322,15 @@
                             <a href="#">
                                 <p class="card-text">45 гр</p>
                             </a>
-                            <a href="#" class="btn">90 ₽</a>
+                            <a href="#" class="btn btn-price">90 ₽</a>
+                            <span class="currency" hidden>90</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart22.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -296,12 +340,15 @@
                             <a href="#">
                                 <p class="card-text">45 гр</p>
                             </a>
-                            <a href="#" class="btn">90 ₽</a>
+                            <a href="#" class="btn btn-price">90 ₽</a>
+                            <span class="currency" hidden>90</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart23.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -311,12 +358,15 @@
                             <a href="#">
                                 <p class="card-text">45 гр</p>
                             </a>
-                            <a href="#" class="btn">90 ₽</a>
+                            <a href="#" class="btn btn-price">90 ₽</a>
+                            <span class="currency" hidden>90</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart24.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -326,12 +376,15 @@
                             <a href="#">
                                 <p class="card-text">45 гр</p>
                             </a>
-                            <a href="#" class="btn">100 ₽</a>
+                            <a href="#" class="btn btn-price">100 ₽</a>
+                            <span class="currency" hidden>100</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart25.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -341,7 +394,9 @@
                             <a href="#">
                                 <p class="card-text">50 гр</p>
                             </a>
-                            <a href="#" class="btn">100 ₽</a>
+                            <a href="#" class="btn btn-price">100 ₽</a>
+                            <span class="currency" hidden>100</span>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
@@ -355,7 +410,8 @@
                     <h2><span id="prostie-sushi"></span>Простые суши</h2>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart31.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -365,12 +421,14 @@
                             <a href="#">
                                 <p class="card-text">150 гр</p>
                             </a>
-                            <a href="#" class="btn">130 ₽</a>
+                            <a href="#" class="btn btn-price">130 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart32.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -380,12 +438,14 @@
                             <a href="#">
                                 <p class="card-text">120 гр</p>
                             </a>
-                            <a href="#" class="btn">110 ₽</a>
+                            <a href="#" class="btn btn-price">110 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart33.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -395,12 +455,14 @@
                             <a href="#">
                                 <p class="card-text">150 гр</p>
                             </a>
-                            <a href="#" class="btn">180 ₽</a>
+                            <a href="#" class="btn btn-price">180 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart34.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -410,12 +472,14 @@
                             <a href="#">
                                 <p class="card-text">150 гр</p>
                             </a>
-                            <a href="#" class="btn">190 ₽</a>
+                            <a href="#" class="btn btn-price">190 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart35.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -425,11 +489,13 @@
                             <a href="#">
                                 <p class="card-text">150 гр</p>
                             </a>
-                            <a href="#" class="btn">190 ₽</a>
+                            <a href="#" class="btn btn-price">190 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart36.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -439,11 +505,13 @@
                             <a href="#">
                                 <p class="card-text">150 гр</p>
                             </a>
-                            <a href="#" class="btn">200 ₽</a>
+                            <a href="#" class="btn btn-price">200 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart37.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -453,7 +521,8 @@
                             <a href="#">
                                 <p class="card-text">150 гр</p>
                             </a>
-                            <a href="#" class="btn">190 ₽</a>
+                            <a href="#" class="btn btn-price">190 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
@@ -467,7 +536,8 @@
                     <h2><span id="zapechenie-sushi"></span>Запеченные суши</h2>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart41.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -477,12 +547,14 @@
                             <a href="#">
                                 <p class="card-text">310 гр</p>
                             </a>
-                            <a href="#" class="btn">480 ₽</a>
+                            <a href="#" class="btn btn-price">480 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart42.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -492,12 +564,14 @@
                             <a href="#">
                                 <p class="card-text">310 гр</p>
                             </a>
-                            <a href="#" class="btn">485 ₽</a>
+                            <a href="#" class="btn btn-price">485 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart43.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -507,12 +581,14 @@
                             <a href="#">
                                 <p class="card-text">310 гр</p>
                             </a>
-                            <a href="#" class="btn">490 ₽</a>
+                            <a href="#" class="btn btn-price">490 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart44.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -522,12 +598,14 @@
                             <a href="#">
                                 <p class="card-text">310 гр</p>
                             </a>
-                            <a href="#" class="btn">490 ₽</a>
+                            <a href="#" class="btn btn-price">490 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart45.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -537,7 +615,8 @@
                             <a href="#">
                                 <p class="card-text">290 гр</p>
                             </a>
-                            <a href="#" class="btn">470 ₽</a>
+                            <a href="#" class="btn btn-price">470 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
@@ -551,7 +630,8 @@
                     <h2><span id="slojnie-sushi"></span>Сложные суши</h2>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart51.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -561,12 +641,14 @@
                             <a href="#">
                                 <p class="card-text">270 гр</p>
                             </a>
-                            <a href="#" class="btn">350 ₽</a>
+                            <a href="#" class="btn btn-price">350 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart52.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -576,12 +658,14 @@
                             <a href="#">
                                 <p class="card-text">280 гр</p>
                             </a>
-                            <a href="#" class="btn">360 ₽</a>
+                            <a href="#" class="btn btn-price">360 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart53.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -591,12 +675,14 @@
                             <a href="#">
                                 <p class="card-text">260 гр</p>
                             </a>
-                            <a href="#" class="btn">380 ₽</a>
+                            <a href="#" class="btn btn-price">380 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart54.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -606,12 +692,14 @@
                             <a href="#">
                                 <p class="card-text">260 гр</p>
                             </a>
-                            <a href="#" class="btn">380 ₽</a>
+                            <a href="#" class="btn btn-price">380 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart55.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -621,12 +709,14 @@
                             <a href="#">
                                 <p class="card-text">270 гр</p>
                             </a>
-                            <a href="#" class="btn">385 ₽</a>
+                            <a href="#" class="btn btn-price">385 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart56.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -636,12 +726,14 @@
                             <a href="#">
                                 <p class="card-text">270 гр</p>
                             </a>
-                            <a href="#" class="btn">385 ₽</a>
+                            <a href="#" class="btn btn-price">385 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart57.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -651,12 +743,14 @@
                             <a href="#">
                                 <p class="card-text">300 гр</p>
                             </a>
-                            <a href="#" class="btn">385 ₽</a>
+                            <a href="#" class="btn btn-price">385 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart58.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -666,12 +760,14 @@
                             <a href="#">
                                 <p class="card-text">270 гр</p>
                             </a>
-                            <a href="#" class="btn">390 ₽</a>
+                            <a href="#" class="btn btn-price">390 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart59.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -681,12 +777,14 @@
                             <a href="#">
                                 <p class="card-text">280 гр</p>
                             </a>
-                            <a href="#" class="btn">360 ₽</a>
+                            <a href="#" class="btn btn-price">360 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart510.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -696,12 +794,14 @@
                             <a href="#">
                                 <p class="card-text">280 гр</p>
                             </a>
-                            <a href="#" class="btn">360 ₽</a>
+                            <a href="#" class="btn btn-price">360 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart511.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -711,12 +811,14 @@
                             <a href="#">
                                 <p class="card-text">280 гр</p>
                             </a>
-                            <a href="#" class="btn">380 ₽</a>
+                            <a href="#" class="btn btn-price">380 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart512.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -726,12 +828,14 @@
                             <a href="#">
                                 <p class="card-text">285 гр</p>
                             </a>
-                            <a href="#" class="btn">385 ₽</a>
+                            <a href="#" class="btn btn-price">385 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart513.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -741,12 +845,14 @@
                             <a href="#">
                                 <p class="card-text">300 гр</p>
                             </a>
-                            <a href="#" class="btn">385 ₽</a>
+                            <a href="#" class="btn btn-price">385 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart514.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -756,12 +862,14 @@
                             <a href="#">
                                 <p class="card-text">270 гр</p>
                             </a>
-                            <a href="#" class="btn">385 ₽</a>
+                            <a href="#" class="btn btn-price">385 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart515.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -771,12 +879,14 @@
                             <a href="#">
                                 <p class="card-text">270 гр</p>
                             </a>
-                            <a href="#" class="btn">390 ₽</a>
+                            <a href="#" class="btn btn-price">390 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart516.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -786,12 +896,14 @@
                             <a href="#">
                                 <p class="card-text">285 гр</p>
                             </a>
-                            <a href="#" class="btn">395 ₽</a>
+                            <a href="#" class="btn btn-price">395 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart517.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -801,12 +913,14 @@
                             <a href="#">
                                 <p class="card-text">280 гр</p>
                             </a>
-                            <a href="#" class="btn">400 ₽</a>
+                            <a href="#" class="btn btn-price">400 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart518.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -816,12 +930,14 @@
                             <a href="#">
                                 <p class="card-text">290 гр</p>
                             </a>
-                            <a href="#" class="btn">400 ₽</a>
+                            <a href="#" class="btn btn-price">400 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart519.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -831,12 +947,14 @@
                             <a href="#">
                                 <p class="card-text">270 гр</p>
                             </a>
-                            <a href="#" class="btn">410 ₽</a>
+                            <a href="#" class="btn btn-price">410 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart520.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -846,12 +964,14 @@
                             <a href="#">
                                 <p class="card-text">310 гр</p>
                             </a>
-                            <a href="#" class="btn">410 ₽</a>
+                            <a href="#" class="btn btn-price">410 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart521.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -861,12 +981,14 @@
                             <a href="#">
                                 <p class="card-text">300 гр</p>
                             </a>
-                            <a href="#" class="btn">470 ₽</a>
+                            <a href="#" class="btn btn-price">470 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart522.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -876,12 +998,14 @@
                             <a href="#">
                                 <p class="card-text">295 гр</p>
                             </a>
-                            <a href="#" class="btn">480 ₽</a>
+                            <a href="#" class="btn btn-price">480 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart523.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -891,12 +1015,14 @@
                             <a href="#">
                                 <p class="card-text">305 гр</p>
                             </a>
-                            <a href="#" class="btn">490 ₽</a>
+                            <a href="#" class="btn btn-price">490 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart524.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -906,12 +1032,14 @@
                             <a href="#">
                                 <p class="card-text">285 гр</p>
                             </a>
-                            <a href="#" class="btn">500 ₽</a>
+                            <a href="#" class="btn btn-price">500 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart525.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -921,12 +1049,14 @@
                             <a href="#">
                                 <p class="card-text">275 гр</p>
                             </a>
-                            <a href="#" class="btn">400 ₽</a>
+                            <a href="#" class="btn btn-price">400 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
                         <a href="#"><img src="image/action-cart526.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
@@ -936,12 +1066,14 @@
                             <a href="#">
                                 <p class="card-text">300 гр</p>
                             </a>
-                            <a href="#" class="btn">405 ₽</a>
+                            <a href="#" class="btn btn-price">405 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart527.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -951,12 +1083,14 @@
                             <a href="#">
                                 <p class="card-text">270 гр</p>
                             </a>
-                            <a href="#" class="btn">410 ₽</a>
+                            <a href="#" class="btn btn-price">410 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart528.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -966,12 +1100,14 @@
                             <a href="#">
                                 <p class="card-text">295 гр</p>
                             </a>
-                            <a href="#" class="btn">430 ₽</a>
+                            <a href="#" class="btn btn-price">430 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart529.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -981,12 +1117,14 @@
                             <a href="#">
                                 <p class="card-text">295 гр</p>
                             </a>
-                            <a href="#" class="btn">470 ₽</a>
+                            <a href="#" class="btn btn-price">470 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart530.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -996,12 +1134,14 @@
                             <a href="#">
                                 <p class="card-text">295 гр</p>
                             </a>
-                            <a href="#" class="btn">485 ₽</a>
+                            <a href="#" class="btn btn-price">485 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart531.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -1011,12 +1151,14 @@
                             <a href="#">
                                 <p class="card-text">310 гр</p>
                             </a>
-                            <a href="#" class="btn">490 ₽</a>
+                            <a href="#" class="btn btn-price">490 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box">
+                <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
+                    data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
                         <a href="#"><img src="image/action-cart532.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
@@ -1026,7 +1168,8 @@
                             <a href="#">
                                 <p class="card-text">305 гр</p>
                             </a>
-                            <a href="#" class="btn">510 ₽</a>
+                            <a href="#" class="btn btn-price">510 ₽</a>
+                            <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
                     </div>
                 </div>
@@ -1036,8 +1179,86 @@
                 <div class="main-line"></div>
 
             </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modalCard-box" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="image/action-cart1.jpg" class="modal-img">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title fs-5 modal-card-title" id="exampleModalLabel"></h1>
+                            <span class="modal-txt">...</span>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Продолжить
+                                покупки</button>
+                            <button type="button" class="btn btn-primary add-to-cart"
+                                style="background-color: #ea382c; border-color: #ea382c;"
+                                onmouseover="this.style.backgroundColor='#df1c0e';"
+                                onmouseout="this.style.backgroundColor='#ea382c';" data-bs-dismiss="modal"
+                                id="liveToastBtn" onclick="toast()">Добавить в
+                                Корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+
+            <!--pop-up windows-->
+           <!--<div class="toast-container position-fixed p-3 top-0 end-0">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">            
+                        <strong class="me-auto">Добавлено:</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+                    </div>
+                    <div class="toast-body">
+                        <img src="image/action-cart2.jpg" class="rounded me-2 toast-img" alt="...">
+                        <span class="toast-title">Темпура ебать</span>
+                    </div>
+                </div>
+            </div>--> 
+
     </main>
 
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 footer-image">
+                    <a href="index.html">
+                        <img src="image/logo.jpg">
+                    </a>
+                </div>
+
+                <div class="col-12 footer-text">
+                    <p>Единый номер службы доставки:
+                        <a href="tel:+79785971862">+7(978)-597-18-62 </a>
+                    </p>
+                </div>
+
+                <div class="col-12 footer-line">
+                    <div class="line"></div>
+                </div>
+
+                <div class="col-12 footer-link">
+                    <a href="https://vk.com/fishka_simferopol">
+                        <img src="image/vk-icon.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 footer-end">
+            <div class="end"></div>
+        </div>
+    </footer>
+
+
 </body>
+<script src="script/script.js"></script>
 
 </html>
