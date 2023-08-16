@@ -4,17 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logoTitle.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>Fish'ka Симферополь | Роллы | Пицца | Доставка</title>
 </head>
 
-<body>
+<body> 
+    
+        
+        
     <header>
         <nav class="navbar fixed-top main-nav">
             <div class="container-fluid">
@@ -24,14 +30,14 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand me-auto ms-4 lol image-logo1" href="index.html">
+                    <a class="navbar-brand me-auto ms-4 nav-class image-logo1" href="index.html">
                         <img src="image/logo.jpg" class="image-logo">
                     </a>
                     <ul class="nav-sity-inf">
-                        <li><a class="navbar-brand me-auto lol ms-3" href="#">г. Симферополь</li>
-                        <li class="nav-small-text">Каждый день 10:00-22:00</li> </a>
+                        <li><a class="navbar-brand me-auto nav-class ms-3 nav-sity-inf-city">г. Симферополь</li>
+                        <li class="nav-small-text nav-sity-inf-date">Каждый день 10:00-22:00</li> </a>
                     </ul>
-                    <a class="navbar-brand lol navbar-phone ms-5" href="tel:+79785971862">+7(978)-597-18-62</a>
+                    <a class="navbar-brand nav-class navbar-phone ms-5" href="tel:+79785971862">+7(978)-597-18-62</a>
                 </div>
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -45,16 +51,19 @@
                     <div class="offcanvas-body nav-menu">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active rr" aria-current="page" href="#">Условия Доставки</a>
+                                <a class="nav-link active rr" aria-current="page" href="index.html#action-and-new" style="color:#ea382c; font-weight: 600; font-size: 22px;">Меню</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Наши адреса</a>
+                                <a class="nav-link active rr" aria-current="page" href="delivery/delivery.html">Условия Доставки</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">О нас</a>
+                                <a class="nav-link active" aria-current="page" href="addressees/address.html">Наши адреса</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Информация об оплате</a>
+                                <a class="nav-link active" aria-current="page" href="about/about.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="payment/payment.html">Информация об оплате</a>
                             </li>
 
                         </ul>
@@ -63,6 +72,11 @@
                             <h6>Связаться с нами</h6>
                             <p><a href="tel:+79785971862">+7(978)-597-18-62</a></p>
                             <p><a href="tel:+79785971862">+7(978)-597-18-62</a></p>
+                        </div>
+                        
+                        <div class="main-info-city">
+                            <p class="main-city">г. Симферополь</p>
+                            <p class="main-city-date">Каждый день 10:00-22:00</p>
                         </div>
 
                         <form class="d-flex mt-3 nav-form-seach" role="search">
@@ -73,12 +87,18 @@
 
                 </div>
                 <div class="ms-auto d-flex flex-row-reverse right-nav">
-                    <div><a class="nav-link active nav-login" aria-current="page" href="#" data-bs-toggle="modal"
+                    <div><a class="nav-link active nav-login" aria-current="page" data-bs-toggle="modal"
                             data-bs-target="#modalCart">
                             <img src="image/cart.png">
-                            <span class="navbar-brand cart-text">Корзина</span></a>
+                            <span class="navbar-brand cart-text basket-name">Корзина</span>
+                        </a>        
                     </div>
-
+                    <div class="basket-count-icon">
+                        <a class="nav-link active nav-login" aria-current="page" data-bs-toggle="modal"
+                            data-bs-target="#modalCart">
+                            <span class="basket-count-icon-number">0</span>
+                            </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -132,11 +152,16 @@
                         <!--CART BODY-->
                         <!---->
                     </div>
+                    <div class="modal-body-line"></div>
+                    <div class="modal-body-price">
+                        <p>Сумма заказа:</p>
+                        <p class="modal-body-cost">0 ₽</p>
+                    </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Продолжить
                             покупки</button>
                         <button type="button" class="btn btn-primary"
-                            style="background-color: #ea382c; border-color: #ea382c;">Перейти к оформлению</button>
+                            style="background-color: #ea382c; border-color: #ea382c;" onclick="document.location='ordering/ordering.html'">Перейти к оформлению</button>
                     </div>
                 </div>
             </div>
@@ -144,8 +169,11 @@
         <!---->
 
     </header>
+
+
+
     <main class="main-content">
-        <ul class="nav nav-pills mb-3 nav-sticky" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills nav-sticky" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link nav-action active" id="pills-home-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -193,7 +221,7 @@
             <!--Action and new-->
             <div class="row ms-3 me-3">
                 <div class="main-title">
-                    <h2><span id="action-and-new"></span>Акции и новинки</h2>
+                    <h2 class="action-and-new"><span id="action-and-new"></span>Акции и новинки</h2>
                 </div>
 
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
@@ -217,15 +245,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart2.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart2.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Сет Остров</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">1045 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">1100 ₽</a>
+                            <a class="btn btn-price">1100 ₽</a>
                             <span class="currency" hidden>1100</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -235,15 +263,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart3.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart3.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Сет Филадельфия</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">865 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">1125 ₽</a>
+                            <a class="btn btn-price">1125 ₽</a>
                             <span class="currency" hidden>1125</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -253,15 +281,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart4.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart4.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Сет Калифорния</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">1080 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">1395 ₽</a>
+                            <a class="btn btn-price">1395 ₽</a>
                             <span class="currency" hidden>1395</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -271,15 +299,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart5.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart5.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Сет №1</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">415 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">445 ₽</a>
+                            <a class="btn btn-price">445 ₽</a>
                             <span class="currency" hidden>445</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -289,15 +317,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart6.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart6.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Сет Спайси</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">585 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">785 ₽</a>
+                            <a class="btn btn-price">785 ₽</a>
                             <span class="currency" hidden>785</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -314,15 +342,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white card-first" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart21.jpg" class="card-img-top" alt="Суши тунец"></a>
+                        <a><img src="image/action-cart21.jpg" class="card-img-top" alt="Суши тунец"></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Суши тунец</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">45 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">90 ₽</a>
+                            <a class="btn btn-price">90 ₽</a>
                             <span class="currency" hidden>90</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -332,15 +360,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart22.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart22.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Суши лосось</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">45 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">90 ₽</a>
+                            <a class="btn btn-price">90 ₽</a>
                             <span class="currency" hidden>90</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -350,15 +378,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart23.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart23.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Суши креветка</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">45 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">90 ₽</a>
+                            <a class="btn btn-price">90 ₽</a>
                             <span class="currency" hidden>90</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -368,15 +396,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart24.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart24.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Суши угорь</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">45 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">100 ₽</a>
+                            <a class="btn btn-price">100 ₽</a>
                             <span class="currency" hidden>100</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -386,15 +414,15 @@
                 <div class="col-6 col-lg-3 col-sm-6 col-md-4 col-xxl-2 col-xl-3 card-box" data-bs-toggle="modal"
                     data-bs-target="#modalCard-box">
                     <div class="card border-white" style="width: 100%;">
-                        <a href="#"><img src="image/action-cart25.jpg" class="card-img-top" alt="..."></a>
+                        <a><img src="image/action-cart25.jpg" class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href="#">
+                            <a>
                                 <h5 class="card-title">Суши спайси</h5>
                             </a>
-                            <a href="#">
+                            <a>
                                 <p class="card-text">50 гр</p>
                             </a>
-                            <a href="#" class="btn btn-price">100 ₽</a>
+                            <a class="btn btn-price">100 ₽</a>
                             <span class="currency" hidden>100</span>
                             <span class="card-info" hidden>Рис, нори, сыр, масаго оранжевая, огурец, лосось</span>
                         </div>
@@ -1180,7 +1208,7 @@
 
             </div>
 
-            <!-- Modal -->
+        <!-- Modal -->
             <div class="modal fade" id="modalCard-box" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog">
@@ -1191,7 +1219,7 @@
 
                         </div>
                         <div class="modal-body">
-                            <h1 class="modal-title fs-5 modal-card-title" id="exampleModalLabel"></h1>
+                            <h1 class="modal-title modal-card-title" id="exampleModalLabel"></h1>
                             <span class="modal-txt">...</span>
 
                         </div>
@@ -1202,31 +1230,31 @@
                                 style="background-color: #ea382c; border-color: #ea382c;"
                                 onmouseover="this.style.backgroundColor='#df1c0e';"
                                 onmouseout="this.style.backgroundColor='#ea382c';" data-bs-dismiss="modal"
-                                id="liveToastBtn" onclick="toast()">Добавить в
+                                id="liveToastBtn">Добавить в
                                 Корзину</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!---->
+        <!---->
 
-            <!--pop-up windows-->
-           <!--<div class="toast-container position-fixed p-3 top-0 end-0">
-                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <!--pop-up windows-->
+           <div class="toast-container position-fixed p-3 top-0 end-0">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-config='{"delay":1500}'>
                     <div class="toast-header">            
                         <strong class="me-auto">Добавлено:</strong>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
                     </div>
                     <div class="toast-body">
                         <img src="image/action-cart2.jpg" class="rounded me-2 toast-img" alt="...">
                         <span class="toast-title">Темпура ебать</span>
                     </div>
                 </div>
-            </div>--> 
-
+            </div>
+        <!---->
     </main>
 
     <footer>
+        <div class="footer-top-line"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12 footer-image">

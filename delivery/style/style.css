@@ -105,7 +105,6 @@ nav .container-fluid .navbar-phone {
 }
 nav .container-fluid .right-nav {
   margin-right: 10px;
-  cursor: pointer;
 }
 nav .container-fluid .right-nav .cart-text {
   font-size: 16px;
@@ -194,141 +193,15 @@ nav .nav-form-seach button:hover {
   background-color: white;
 }
 
-.carousel-inner {
-  border-radius: 2%;
-}
-
-.header-carousel {
-  margin-top: 100px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header-carousel .header-carousel-image {
-  width: 100%;
-  border-radius: 15px;
-}
-.header-carousel .carousel-indicators {
-  width: 80%;
-  border: 5px;
-  border-color: #000000;
-}
-
 main .nav-pills {
   border-bottom: solid 1px rgb(226, 226, 226);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.1);
 }
 main .nav-pills .nav-item {
   font-size: 20px;
 }
 main .nav-pills .nav-item .nav-link {
   border-radius: 12px;
-}
-main .cont {
-  margin-left: 30px;
-}
-main .cont .row {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-main .cont .row .main-title h2 {
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  position: relative;
-}
-main .cont .row .main-title h2 span {
-  position: absolute;
-  top: -180px;
-}
-main .cont .row .card .card-img-top {
-  width: 100%;
-}
-main .cont .row .card .card-img-top:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s;
-}
-main .cont .row .card .btn {
-  background-color: #ea382c;
-  color: #ffffff;
-  width: 60%;
-  height: 50px;
-  font-size: 24px;
-  border-radius: 20px;
-}
-main .cont .row .card .btn:hover {
-  background-color: silver;
-}
-main .cont .row .card .card-body .card-title {
-  font-size: 18px;
-  color: #2b2b2b;
-}
-main .cont .row .card .card-body .card-text {
-  color: rgb(145, 145, 145);
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-main .cont .row .card .card-body a {
-  text-decoration: none;
-}
-main .cont .row .card:hover {
-  border: 1px;
-}
-main .cont .row .card-first {
-  margin: 0px;
-}
-main .cont .row .main-line {
-  width: 100%;
-  height: 1px;
-  margin-top: 20px;
-}
-main .card-box {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-main .modal .modal-content .modal-header {
-  display: column;
-  align-items: start;
-}
-main .modal .modal-content .modal-header img {
-  width: 95%;
-  margin-left: 2.5%;
-}
-main .modal .modal-content .modal-header button {
-  background-color: #ffffff;
-}
-main .modal .modal-content .modal-body h1 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-main .modal .modal-content .modal-body .modal-txt {
-  font-size: 18px;
-  color: #4e4e4e;
-}
-main .modal .modal-content .modal-body .modal-txt span {
-  font-size: 24px;
-  font-weight: 600;
-  margin-left: 60%;
-  color: #ea382c;
-}
-main .toast {
-  width: 220px;
-}
-main .toast .toast-header .me-auto {
-  font-weight: 600;
-}
-main .toast .toast-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .toast .toast-body img {
-  width: 70px;
-  height: 50px;
 }
 main .nav-sticky :hover {
   color: #ea382c;
@@ -342,7 +215,7 @@ main .nav-sticky {
   background-color: #ffffff;
   height: 57px;
   padding-top: 10px;
-  margin-top: 20px;
+  margin-top: 80px;
   padding-left: 20px;
   z-index: 1;
 }
@@ -351,6 +224,104 @@ main .nav-sticky li button {
 }
 main .nav-sticky li button:active {
   background-color: #ea382c;
+}
+main .cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 70px;
+}
+main .cont .main-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-family: 600;
+}
+main .cont .cart-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .cont .cart-box .card {
+  border-radius: 20px;
+  border-color: #ffffff;
+  margin: 10px;
+  height: 200px;
+  max-width: 400px;
+}
+main .cont .cart-box .card .card-body .card-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+main .cont .cart-box .card .card-body .card-text {
+  font-size: 18px;
+  color: rgb(82, 82, 82);
+}
+main .cont .cart-box .card .card-body .card-text a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  font-weight: 600;
+  font-size: 20px;
+}
+main .cont .cart-box .card .card-img-bottom {
+  align-items: end;
+  max-width: 200px;
+  max-height: 100px;
+  margin-left: auto;
+}
+main .cont .cart-box .card2 {
+  height: 300px;
+  max-width: 400px;
+}
+main .cont .cart-box .card3 {
+  width: 100%;
+  height: 350px;
+}
+main .cont .cart-box .card3 .card-body {
+  width: 100%;
+  height: 100%;
+}
+main .cont .cart-box .card3 .card-body iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+main .cont .cart-box .card4 {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  border-color: #ffffff;
+  margin: 10px;
+}
+main .cont .cart-box .card4 .card-body .card-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+main .cont .cart-box .card4 .card-body .card-text {
+  font-size: 18px;
+  color: rgb(82, 82, 82);
+}
+main .cont .cart-box .card4 .card-body .card-text a {
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+  font-weight: 600;
+  font-size: 20px;
+}
+main .cont .cart-box .card4 .card-body ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 10px;
+}
+main .cont .cart-box .card4 .card-body ul li div {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
 }
 
 footer .footer-top-line {
@@ -432,6 +403,18 @@ footer .footer-end .end {
   .nav-sity-inf li .nav-sity-inf-city {
     font-size: 18px;
   }
+  main .cont .cart-box .card {
+    height: 250px;
+  }
+  main .cont .cart-box .card2 {
+    height: 340px;
+  }
+  main .cont .cart-box .card3 {
+    height: 340px;
+  }
+  main .cont .cart-box .card4 {
+    height: 340px;
+  }
 }
 @media only screen and (max-width: 767px) {
   nav .container-fluid .navbar-phone {
@@ -446,9 +429,6 @@ footer .footer-end .end {
   main .cont .row .main-title h2 {
     font-size: 26px;
   }
-  main .nav-sticky {
-    margin-top: 30px;
-  }
   main .nav-pills {
     height: 79px;
   }
@@ -458,18 +438,17 @@ footer .footer-end .end {
   main .nav-sticky :hover {
     color: #000;
   }
+  main .cont .cart-box .card .card-body .card-title {
+    font-size: 17px;
+  }
+  main .cont .cart-box .card .card-body .card-text {
+    font-size: 14px;
+  }
+  main .cont .cart-box .card .card-body .card-text a {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 550px) {
-  header .header-carousel .header-carousel-image {
-    height: 270px;
-    border-radius: 25px;
-  }
-  header nav .container-fluid .nav-class {
-    width: 150px;
-  }
-  .header-carousel {
-    width: 92%;
-  }
   header .cart-body .cart-image img {
     width: 75px;
     height: 60px;
@@ -499,57 +478,27 @@ footer .footer-end .end {
   nav .nav-sity-inf {
     display: none;
   }
-  main .cont {
-    margin-left: 0px;
-  }
-  main .cont .row .main-title h2 {
-    font-size: 25px;
-    margin-bottom: 10px;
-  }
-  main .cont .row .main-title h2 span {
-    top: -192px;
-  }
-  main .cont .row .card .card-body .card-title {
-    font-size: 14px;
-  }
-  main .cont .row .card .card-body .card-text {
-    font-size: 14px;
-  }
-  main .cont .row .card .btn {
-    height: 35px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   main .nav-pills .nav-item {
     font-size: 13.1px;
   }
-  main .nav-sticky :hover {
-    color: #000;
+  main .cont .cart-box .card {
+    height: 200px;
   }
-  .card-body {
-    padding-left: 10px;
-    padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+  main .cont .cart-box .card2 {
+    height: 275px;
+    max-width: 100%;
   }
-  main .modal .modal-content .modal-body h1 {
+  main .cont .cart-box .card4 {
+    height: 300px;
+  }
+  main .cont .cart-box .card .card-body .card-title {
+    font-size: 22px;
+  }
+  main .cont .cart-box .card .card-body .card-text {
     font-size: 18px;
   }
-  main .modal .modal-content .modal-body .modal-txt {
-    font-size: 16px;
-  }
-  main .modal .modal-content .modal-body .modal-txt span {
-    font-size: 20px;
-    margin-left: 50%;
-  }
-  main .toast .toast-body img {
-    width: 40px;
-    height: 20px;
-  }
-  main .toast {
-    width: 150px;
+  main .cont .cart-box .card .card-body .card-text a {
+    font-size: 24px;
   }
   footer .container .row .footer-image a img {
     height: 50px;
@@ -563,10 +512,6 @@ footer .footer-end .end {
   header nav .container-fluid .nav-class {
     width: 110px;
     margin-top: 2px;
-  }
-  header .header-carousel .header-carousel-image {
-    height: 260px;
-    border-radius: 25px;
   }
   header .cart-body {
     margin-bottom: 25px;
@@ -601,29 +546,13 @@ footer .footer-end .end {
     display: none;
   }
   main .nav-sticky {
-    margin-top: 30px;
+    margin-top: 80px;
   }
   main .nav-pills {
     height: 100px;
   }
   main .nav-pills .nav-item {
     font-size: 14px;
-  }
-  main .cont .row .card .card-body .card-title {
-    height: 18px;
-  }
-  main .cont .row .card .btn {
-    height: 27px;
-    font-size: 12.2px;
-  }
-  main .modal .modal-content .modal-body .modal-txt span {
-    margin-left: 41%;
-  }
-  main .toast .toast-body img {
-    display: none;
-  }
-  main .toast {
-    width: 100px;
   }
   footer .container .row .footer-text {
     margin-top: 20px;

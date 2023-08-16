@@ -115,7 +115,6 @@ nav {
         }
         .right-nav {
             margin-right: 10px;
-            cursor: pointer;
             .cart-text {
                 font-size: 16px;
                 font-weight: 500;
@@ -217,157 +216,16 @@ nav {
     background-color: white;
 
 }
-.carousel-inner {
-    border-radius: 2%;
-}
-    .header-carousel {
-        margin-top: 100px;
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        .header-carousel-image {
-            width: 100%;
-            border-radius: 15px;
-        }
-        .carousel-indicators {
-            width: 80%;
-            border: 5px;
-            border-color: #000000;
-        }
-    }  
 
-    
 main {
     .nav-pills {
         border-bottom: solid 1px rgb(226, 226, 226);
+        box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.1);
         .nav-item {
             font-size: 20px;
             .nav-link{
                 border-radius: 12px;
                 
-            }
-        }
-    }
-    .cont {
-        margin-left: 30px;
-        .row {
-            margin-top: 20px;
-            margin-bottom: 40px;
-            .main-title {
-                h2 {
-                    font-size: 30px;
-                    font-weight: 600;
-                    margin-top: 20px;
-                    margin-bottom: 40px;
-                    position:relative;
-                    span {
-                        position:absolute; 
-                        top:-180px;
-                    }
-                }
-            }
-            .card {           
-                .card-img-top {  
-                    width: 100%;
-                }
-                .card-img-top:hover {  
-                    transform: scale(1.1);
-                    transition: transform 0.5s;
-                }
-                .btn {
-                    background-color: #ea382c;
-                    color: #ffffff;
-                    width: 60%;
-                    height: 50px;
-                    font-size: 24px;
-                    border-radius: 20px;
-                }
-                .btn:hover {
-                    background-color: silver; 
-                }
-                .card-body {
-                    .card-title {
-                        font-size: 18px;
-                        color: #2b2b2b;
-                    }
-                    .card-text {
-                        color: rgb(145, 145, 145);
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                    }
-                    a {
-                        text-decoration: none;
-                    }
-                }
-            }
-            .card:hover {
-                border: 1px;
-            }
-            .card-first {
-                margin: 0px;
-            }
-            .main-line {
-                //background-color: rgb(226, 226, 226);
-                width: 100%;
-                height: 1px;
-                margin-top: 20px;
-            }
-        }
-    }
-    .card-box {
-        margin-top: 15px;
-        margin-bottom: 15px;
-
-    }
-    .modal {
-        .modal-content {
-            .modal-header {
-                display: column;
-                align-items: start;
-                img {
-                    width: 95%;
-                    margin-left: 2.5%;
-                }
-                button {
-                    background-color: #ffffff;
-                }
-            }
-            .modal-body {
-                h1 {
-                    font-size: 20px;
-                    font-weight: 600;
-                    margin-bottom: 10px;
-                }
-                .modal-txt {
-                    font-size: 18px;
-                    color: #4e4e4e;
-                    span {
-                        font-size: 24px;
-                        font-weight: 600;
-                        margin-left: 60%;
-                        color: #ea382c;
-                    }
-                }
-            }
-        }
-    }
-    .toast {
-        width: 220px;
-        .toast-header {
-            .me-auto {
-                font-weight: 600;
-            }
-        }
-        .toast-body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 70px;
-                height: 50px;
             }
         }
     }
@@ -385,7 +243,7 @@ main {
         background-color: #ffffff;
         height: 57px;
         padding-top: 10px;
-        margin-top: 20px;
+        margin-top: 80px;
         padding-left: 20px;
         z-index: 1;
         //border-bottom: solid 0.05px rgb(167, 167, 167);
@@ -398,9 +256,22 @@ main {
             }
         }
     }
+
+   
+
 }
 
-
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+        margin: 200px 0px 200px 0px;
+        p {
+            font-size: 20px;
+        }
+    }
+}
 
 
 footer {

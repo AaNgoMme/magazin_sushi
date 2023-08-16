@@ -28,6 +28,10 @@
                 font-size: 18px;
             }
         }
+
+      
+
+
 }
 // screen and (max-width:767px)
 
@@ -54,9 +58,7 @@
             font-size: 26px
         }
         main {
-            .nav-sticky {
-                margin-top: 30px;
-            }
+           
             .nav-pills {
                 height: 79px;
                 .nav-item {
@@ -67,6 +69,10 @@
                 color: #000;
             }
         }
+
+
+
+
 }
 
 
@@ -75,18 +81,7 @@
 
 
 @media only screen and (max-width:550px) {
-    header {
-        .header-carousel .header-carousel-image {
-            height: 270px;
-            border-radius: 25px;
-        }
-        nav .container-fluid .nav-class {
-            width: 150px;
-        }
-    }
-    .header-carousel {
-        width: 92%;
-    }
+
     header .cart-body .cart-image img {
         width: 75px;
         height: 60px;
@@ -119,64 +114,18 @@
             display: none;           
         }
     }
-    main .cont {
-        margin-left: 0px;
-    }
-    main .cont .row .main-title h2 {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-    main .cont .row .main-title h2 span {
-        top: -192px;
-    }
-    main .cont .row .card .card-body .card-title {
-        font-size: 14px;
-    }
-    main .cont .row .card .card-body .card-text {
-        font-size: 14px;
-    }
-    main .cont .row .card .btn {
-        height: 35px;
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     main {
         .nav-pills {
             .nav-item {
                 font-size: 13.1px;
             }
         }
-        .nav-sticky :hover {
-            color: #000;
-        }
     }
-    .card-body {
-        padding-left: 10px;
-        padding-top: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-    }
-    main .modal .modal-content .modal-body {
-        h1 {
-            font-size: 18px;
-        }
-        .modal-txt {
-            font-size: 16px;
-            span {
-                font-size: 20px;
-                margin-left: 50%;
-            }
-        }
-    }
-    main .toast .toast-body img {
-        width: 40px;
-        height: 20px;
-    }
-    main .toast {
-        width: 150px;
-    }
+
+
+
+
+
 
     footer .container .row .footer-image a img {
         height: 50px;
@@ -196,12 +145,7 @@
         width: 110px;
         margin-top: 2px;
     }
-    header {
-        .header-carousel .header-carousel-image {
-            height: 260px;
-            border-radius: 25px;
-        }
-    }
+
     header .cart-body {
         margin-bottom: 25px;
     }
@@ -220,18 +164,8 @@
     nav .container-fluid .right-nav {
         margin-right: -10px;
     }
-    nav .container-fluid .navbar-toggler {
-        width: 40px;
-        height: 40px;
-        margin-top: 7px;
-    }
-    .navbar-toggler-icon {
-        width: 1.2em;
-        height: 1.2em;
-        position: fixed;
-        top: 23px;
-        left: 21px;
-    }
+
+
     nav {
         .nav-cart {
                 display: none;
@@ -239,7 +173,7 @@
     }
     main {
         .nav-sticky {
-            margin-top: 30px;
+            margin-top: 80px;
         }
         .nav-pills {
             height: 100px;
@@ -247,22 +181,6 @@
                 font-size: 14px;
             }
         }
-    }
-    main .cont .row .card .card-body .card-title {
-        height: 18px;
-    }
-    main .cont .row .card .btn {
-        height: 27px;
-        font-size: 12.2px;
-    }
-    main .modal .modal-content .modal-body .modal-txt span {
-        margin-left: 41%;
-    }
-    main .toast .toast-body img {
-        display: none;
-    }
-    main .toast {
-        width: 100px;
     }
     footer .container .row .footer-text {
         margin-top: 20px;
