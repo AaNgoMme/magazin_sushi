@@ -4,30 +4,34 @@
 let actionAndNew = document.querySelector("#action-and-new");
 let sushi = document.querySelector('#sushi');
 let prostieSushi = document.querySelector('#prostie-sushi');
-let zapechenieSushi = document.querySelector("#zapechenie-sushi");
 let slojnieSushi = document.querySelector('#slojnie-sushi');
-/*et prostieSushi1 = document.querySelector('#prostie-sushi');
-let zapechenieSushi1 = document.querySelector("#zapechenie-sushi");
-let zapechenieSushi2 = document.querySelector("#zapechenie-sushi");*/
-
+let zapechenieSushi = document.querySelector("#zapechenie-sushi");
+let goryachieSushi = document.querySelector('#goryachie-sushi');
+let setsSushi = document.querySelector("#sets-sushi");
+let wokSushi = document.querySelector("#wok-sushi");
+let pizza = document.querySelector("#pizza")
+let zacuski = document.querySelector("#zacuski")
 
 let navAction = document.querySelector('.nav-action');
 let navSushi = document.querySelector('.nav-sushi');
 let navProstie = document.querySelector('.nav-prostie');
-let navZapechenie = document.querySelector('.nav-zapechenie');
 let navSlojnie = document.querySelector('.nav-slojnie');
+let navZapechenie = document.querySelector('.nav-zapechenie');
+let navGoryachie = document.querySelector('.nav-goryachie');
 let navSets = document.querySelector('.nav-sets');
-let navPizza = document.querySelector('.nav-pizza');
 let navWok = document.querySelector('.nav-wok');
+let navPizza = document.querySelector('.nav-pizza');
+let navZacuski = document.querySelector('.nav-zacuski');
+let footerTopLine = document.querySelector(".footer-top-line")
 
 
 window.addEventListener('scroll', function () {
     if (pageYOffset > -10 && pageYOffset < (sushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
-        navAction.className = "nav-link nav-sushi active";
+        navAction.className = "nav-link nav-action active";
         navAction.ariaSelected = "true";
     }
     else {
-        navAction.className = "nav-link nav-sushi";
+        navAction.className = "nav-link nav-action";
         navAction.ariaSelected = "false";
     }
     if (pageYOffset > (sushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (prostieSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
@@ -39,29 +43,69 @@ window.addEventListener('scroll', function () {
         navSushi.ariaSelected = "false";
     }
 
-    if (pageYOffset > (prostieSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (zapechenieSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
-        navProstie.className = "nav-link nav-sushi active";
+    if (pageYOffset > (prostieSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (slojnieSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
+        navProstie.className = "nav-link nav-prostie active";
         navProstie.ariaSelected = "true";
     }
     else {
-        navProstie.className = "nav-link nav-sushi";
+        navProstie.className = "nav-link nav-prostie";
         navProstie.ariaSelected = "false";
     }
-    if (pageYOffset > (zapechenieSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (slojnieSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
-        navZapechenie.className = "nav-link nav-sushi active";
-        navZapechenie.ariaSelected = "true";
-    }
-    else {
-        navZapechenie.className = "nav-link nav-sushi";
-        navZapechenie.ariaSelected = "fasle";
-    }
-    if (pageYOffset > (slojnieSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (slojnieSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
-        navSlojnie.className = "nav-link nav-sushi active";
+    if (pageYOffset > (slojnieSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (zapechenieSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
+        navSlojnie.className = "nav-link nav-slojnie active";
         navSlojnie.ariaSelected = "true";
     }
     else {
-        navSlojnie.className = "nav-link nav-sushi";
+        navSlojnie.className = "nav-link nav-slojnie";
         navSlojnie.ariaSelected = "fasle";
+    }
+    if (pageYOffset > (zapechenieSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (goryachieSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
+        navZapechenie.className = "nav-link nav-zapechenie active";
+        navZapechenie.ariaSelected = "true";
+    }
+    else {
+        navZapechenie.className = "nav-link nav-zapechenie";
+        navZapechenie.ariaSelected = "fasle";
+    }
+    if (pageYOffset > (goryachieSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (setsSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
+        navGoryachie.className = "nav-link nav-goryachie active";
+        navGoryachie.ariaSelected = "true";
+    }
+    else {
+        navGoryachie.className = "nav-link nav-goryachie";
+        navGoryachie.ariaSelected = "fasle";
+    }
+    if (pageYOffset > (setsSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (wokSushi.getBoundingClientRect().top + window.pageYOffset - 50)) {
+        navSets.className = "nav-link nav-sets active";
+        navSets.ariaSelected = "true";
+    }
+    else {
+        navSets.className = "nav-link nav-sets";
+        navSets.ariaSelected = "fasle";
+    }
+    if (pageYOffset > (wokSushi.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (pizza.getBoundingClientRect().top + window.pageYOffset - 50)) {
+        navWok.className = "nav-link nav-sets active";
+        navWok.ariaSelected = "true";
+    }
+    else {
+        navWok.className = "nav-link nav-sets";
+        navWok.ariaSelected = "fasle";
+    }
+    if (pageYOffset > (pizza.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (zacuski.getBoundingClientRect().top + window.pageYOffset - 50)) {
+        navPizza.className = "nav-link nav-sets active";
+        navPizza.ariaSelected = "true";
+    }
+    else {
+        navPizza.className = "nav-link nav-sets";
+        navPizza.ariaSelected = "fasle";
+    }
+    if (pageYOffset > (zacuski.getBoundingClientRect().top + window.pageYOffset - 50) && pageYOffset < (footerTopLine.getBoundingClientRect().top + window.pageYOffset - 50)) {
+        navZacuski.className = "nav-link nav-sets active";
+        navZacuski.ariaSelected = "true";
+    }
+    else {
+        navZacuski.className = "nav-link nav-sets";
+        navZacuski.ariaSelected = "fasle";
     }
     
 }
@@ -87,7 +131,7 @@ for (let i = 0; i < cardBox.length; i++) {
     cardBox[i].onclick = function () {
         modalTitle.innerHTML = cardTitle[i].innerHTML
         modalImg.src = cardImage[i].src
-        modalTxt.innerHTML = `${cardInfo[i].innerHTML} <br> <br>Вес: ${cardText[i].innerHTML} <span class="modal-price"> ${btnPrice[i].innerHTML} </span> <span class="modal-currency" hidden> ${currency[i].innerHTML} </span>`
+        modalTxt.innerHTML = `${cardInfo[i].innerHTML} <br> <br>${cardText[i].innerHTML} <span class="modal-price"> ${btnPrice[i].innerHTML} </span> <span class="modal-currency" hidden> ${currency[i].innerHTML} </span>`
 
     }
 };
@@ -95,6 +139,9 @@ for (let i = 0; i < cardBox.length; i++) {
 
 
 // Add cart to basket and all basket option
+
+
+// Local Storage
 
 if(!localStorage.getItem('goods')) {
     localStorage.setItem('goods', JSON.stringify([]))
@@ -199,30 +246,163 @@ update_goods()
     
 
 //quantity product +-
-    function scoreCartCount() {
-        let countPlus = document.querySelectorAll(".count-plus")
-        let countMinus = document.querySelectorAll(".count-minus") 
-       
-    for (let i = 0; i < countPlus.length; i++) {
-        let goods = JSON.parse(localStorage.getItem('goods')) 
+function scoreCartCount() {
+    let countPlus = document.querySelectorAll(".count-plus")
+    let countMinus = document.querySelectorAll(".count-minus") 
+   
+for (let i = 0; i < countPlus.length; i++) {
+    let goods = JSON.parse(localStorage.getItem('goods')) 
 
-        countPlus[i].onclick = function() {
-            goods[i].splice(4,1, goods[i][4] + 1)
+    countPlus[i].onclick = function() {
+        goods[i].splice(4,1, goods[i][4] + 1)
+        localStorage.setItem('goods', JSON.stringify(goods))
+        update_goods()        
+    }
+
+    countMinus[i].onclick = function() {   
+        if (goods[i][4] == 1) {
+            goods.splice(i, 1)
             localStorage.setItem('goods', JSON.stringify(goods))
-            update_goods()        
+            update_goods()
+        } else {
+            goods[i].splice(4,1, goods[i][4] - 1)
+            localStorage.setItem('goods', JSON.stringify(goods))
+            update_goods()
         }
+    }
+    
+}
+}
 
-        countMinus[i].onclick = function() {   
-            if (goods[i][4] == 1) {
-                goods.splice(i, 1)
-                localStorage.setItem('goods', JSON.stringify(goods))
-                update_goods()
-            } else {
-                goods[i].splice(4,1, goods[i][4] - 1)
-                localStorage.setItem('goods', JSON.stringify(goods))
-                update_goods()
+
+// Soberi Sam Sushi
+
+let sushiCheckbox = document.querySelectorAll(".sushi-checkbox")
+let modalTitleInfoJs = document.querySelector(".modal-title-info-js")
+let countCheckbox = 0
+let checkBoxes = [];
+let addToCartSoberisam = document.querySelector(".add-to-cart-soberisam")
+
+
+
+
+for(let i = 0; i < sushiCheckbox.length; ++i) {
+    let e = sushiCheckbox[i];
+    if(e.type !== 'checkbox') continue;
+    checkBoxes.push(e);
+    e.addEventListener('change', function(){
+        let need = false, state;
+
+        if(this.checked) {
+            ++countCheckbox;
+            modalTitleInfoJs.innerHTML = `${countCheckbox} из 4`
+            need = countCheckbox === 4;
+            state = true;
+            if (countCheckbox == 4) {
+                addToCartSoberisam.disabled = false
             }
         }
-        
+        else {
+            --countCheckbox;
+            modalTitleInfoJs.innerHTML = `${countCheckbox} из 4`
+            need = countCheckbox === 3;
+            state = false;
+            addToCartSoberisam.disabled = true
+        }
+        if(need) {
+            
+            checkBoxes.forEach(function(c) {
+                if(!c.checked) {
+                    c.disabled = state;
+                }
+            });
+        }
+    })
+} 
+
+
+
+let imgSoberiSushi = document.querySelector(".img-soberi-sushi")
+addToCartSoberisam.onclick = function () {
+    
+let goods = JSON.parse(localStorage.getItem('goods')) 
+
+let sushiCartName = ""
+for (let key of sushiCheckbox) {
+    if (key.checked) {
+        sushiCartName += key.nextSibling.innerHTML + ", "
     }
+}
+
+    goods.push([goods.length, imgSoberiSushi.src, "Собери сам", 1200, 1, sushiCartName.slice(0, -2)])
+    localStorage.setItem('goods', JSON.stringify(goods))   
+    update_goods() 
+   
+}
+
+
+/// SOBERI SAM PIZZA
+
+
+let pizzaCheckbox = document.querySelectorAll(".pizza-checkbox")
+let modalTitleInfoPizza = document.querySelector(".modal-title-info-pizza")
+let countCheckboxPizza = 0
+let checkBoxesPizza = [];
+let addToCartSoberisamPizza = document.querySelector(".add-to-cart-soberisam-pizza")
+
+
+
+
+for(let i = 0; i < pizzaCheckbox.length; ++i) {
+    let e = pizzaCheckbox[i];
+    if(e.type !== 'checkbox') continue;
+    checkBoxesPizza.push(e);
+    e.addEventListener('change', function(){
+        let needPizza = false, statePiz;
+
+        if(this.checked) {
+            ++countCheckboxPizza;
+            modalTitleInfoPizza.innerHTML = `${countCheckboxPizza} из 4`
+            needPizza = countCheckboxPizza === 4;
+            statePiz = true;
+            if (countCheckboxPizza == 4) {
+                addToCartSoberisamPizza.disabled = false
+            }
+        }
+        else {
+            --countCheckboxPizza;
+            modalTitleInfoPizza.innerHTML = `${countCheckboxPizza} из 4`
+            needPizza = countCheckboxPizza === 3;
+            statePiz = false;
+            addToCartSoberisamPizza.disabled = true
+        }
+        if(needPizza) {
+            
+            checkBoxesPizza.forEach(function(c) {
+                if(!c.checked) {
+                    c.disabled = statePiz;
+                }
+            });
+        }
+    })
+} 
+
+
+
+let imgSoberiPizza = document.querySelector(".img-soberi-pizza")
+addToCartSoberisamPizza.onclick = function () {
+    
+let goods = JSON.parse(localStorage.getItem('goods')) 
+
+let pizzaCartName = ""
+for (let key of pizzaCheckbox) {
+    if (key.checked) {
+        pizzaCartName += key.nextSibling.innerHTML + ", "
     }
+}
+
+    goods.push([goods.length, imgSoberiSushi.src, "Собери сам", 1200, 1, pizzaCartName.slice(0, -2)])
+    localStorage.setItem('goods', JSON.stringify(goods))   
+    update_goods() 
+   
+} 

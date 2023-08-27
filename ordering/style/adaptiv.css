@@ -1,15 +1,20 @@
-@media (max-width: 992px) {
-  .header-carousel {
-    width: 92%;
+@media (max-width: 1200px) {
+  main .nav-pills .nav-item {
+    font-size: 17px;
   }
+}
+@media (max-width: 992px) {
   .w-100 {
     height: 320px;
   }
   .navbar-phone {
     font-size: 19px;
   }
+  main .nav-pills {
+    height: 85px;
+  }
   main .nav-pills .nav-item {
-    font-size: 15px;
+    font-size: 19px;
   }
   main .nav-sticky :hover {
     color: #000;
@@ -20,6 +25,9 @@
   .nav-sity-inf li .nav-sity-inf-city {
     font-size: 18px;
   }
+  .nav-sity-inf .nav-sity-inf-date {
+    font-size: 11px;
+  }
 }
 @media only screen and (max-width: 767px) {
   nav .container-fluid .navbar-phone {
@@ -29,7 +37,7 @@
     font-size: 16px;
   }
   nav .nav-sity-inf .nav-sity-inf-date {
-    font-size: 12px;
+    font-size: 10px;
   }
   main .cont .row .main-title h2 {
     font-size: 26px;
@@ -74,8 +82,17 @@
   nav .nav-sity-inf {
     display: none;
   }
+  main .nav-sticky {
+    padding-top: 5px;
+  }
+  main .nav-pills {
+    height: 110px;
+  }
   main .nav-pills .nav-item {
-    font-size: 13.1px;
+    font-size: 18px;
+  }
+  main .nav-sticky :hover {
+    color: #000;
   }
   footer .container .row .footer-image a img {
     height: 50px;
@@ -109,9 +126,6 @@
   }
   nav .nav-cart {
     display: none;
-  }
-  main .nav-sticky {
-    margin-top: 80px;
   }
   main .nav-pills {
     height: 100px;

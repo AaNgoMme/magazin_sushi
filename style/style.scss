@@ -150,8 +150,9 @@ nav {
         }
     }
     .nav-small-text {
-        font-size: 14px;
+        font-size: 16px;
         color: rgb(145, 145, 145);
+        margin-left: 5px;
     }
     .navbar-nav .nav-link.active:hover, .navbar-nav .nav-link.show:hover {
         color: #ea382c;
@@ -185,10 +186,16 @@ nav {
                 text-decoration: none;
                 color: #000000;
             }
+            span {
+                font-size: 14px;
+                color: rgb(145, 145, 145);
+                margin-left: 20px;
+                padding-bottom: 5px;
+            }
         }
     }
     .main-info-city {
-        margin: 25px 0 0px 0;
+        margin: 25px 0px 0px 0;
         .main-city{
             font-size: 20px;
             color: #000000;
@@ -196,18 +203,21 @@ nav {
         .main-city-date {
             font-size: 14px;
             color: rgb(145, 145, 145);
-            margin: 10px 0 0px 0;
+            margin: 10px 0px 0px 0;
         }
     }
-    .nav-form-seach {
-        button {
-            background-color: #ea382c;
-            border-color: #ea382c;
-            color: #ffffff;
+    .main-info-vk {
+        .main-vk-title {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
         }
-        button:hover {
-            background-color: #df1c0e;
-            border-color: #ea382c;
+        a {
+            .main-img-vk {
+                width: 100%;
+                height: 50px;
+                border-radius: 20px;
+            }
         }
     }
 }
@@ -244,7 +254,7 @@ main {
     .nav-pills {
         border-bottom: solid 1px rgb(226, 226, 226);
         .nav-item {
-            font-size: 20px;
+            font-size: 22px;
             .nav-link{
                 border-radius: 12px;
                 
@@ -315,9 +325,53 @@ main {
                 height: 1px;
                 margin-top: 20px;
             }
+
+
+            .card {           
+                .card-img-top2 {  
+                    width: 100%;
+                }
+                .card-img-top2:hover {  
+                    transform: scale(1.1);
+                    transition: transform 0.5s;
+                }
+                .btn {
+                    background-color: #ea382c;
+                    color: #ffffff;
+                    width: 60%;
+                    height: 50px;
+                    font-size: 24px;
+                    border-radius: 20px;
+                }
+                .btn:hover {
+                    background-color: silver; 
+                }
+                .card-body2 {
+                    flex: 1 1 auto;
+                    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+                    color: var(--bs-card-color);
+                    .card-title2 {
+                        font-size: 18px;
+                        color: #2b2b2b;
+                    }
+                    .card-text2 {
+                        color: rgb(145, 145, 145);
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
         }
     }
     .card-box {
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+    .card-box2 {
         margin-top: 15px;
         margin-bottom: 15px;
 
@@ -354,6 +408,7 @@ main {
             }
         }
     }
+    
     .toast {
         width: 220px;
         .toast-header {
@@ -400,7 +455,77 @@ main {
     }
 }
 
-
+section {
+    .modal {
+        .modal-content {
+            .modal-header {
+                display: column;
+                align-items: start;
+                img {
+                    width: 95%;
+                    margin-left: 2.5%;
+                }
+                button {
+                    background-color: #ffffff;
+                }
+            }
+            .modal-body {
+                .modal-card-title {
+                    font-size: 26px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }
+                .modal-title-info {
+                    color: rgb(145, 145, 145);
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                    span {
+                        background-color: rgb(145, 145, 145);
+                        border-radius: 20px;
+                        color: #ffffff;
+                        padding-left: 3px;
+                        padding-right: 3px;
+                    }
+                }
+                .modal-txt {
+                    .card {
+                        margin: 10px;
+                        background-color: #f3f3f3;
+                        border-color: #ebebeb;
+                        border-radius: 15px;
+                        img {
+                            width: 100%;
+                            border-radius: 15px;
+                            
+                        }
+                        .card-body-soberisam {
+                            .title-body-soberisam {
+                                font-size: 16px;
+                                font-weight: 600;
+                                padding: 5px;
+                                height: 50px;
+                            }
+                            .form-check {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                label {
+                                    input[type=checkbox] {
+                                        width: 25px;
+                                        height: 25px;
+                                        border-style: none;
+                                        accent-color: #ea382c;
+                                        border-radius: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 footer {

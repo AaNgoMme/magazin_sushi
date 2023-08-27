@@ -1,3 +1,8 @@
+@media (max-width: 1200px) {
+  main .nav-pills .nav-item {
+    font-size: 17px;
+  }
+}
 @media (max-width: 992px) {
   .header-carousel {
     width: 92%;
@@ -8,8 +13,11 @@
   .navbar-phone {
     font-size: 19px;
   }
+  main .nav-pills {
+    height: 85px;
+  }
   main .nav-pills .nav-item {
-    font-size: 15px;
+    font-size: 19px;
   }
   main .nav-sticky :hover {
     color: #000;
@@ -20,6 +28,9 @@
   .nav-sity-inf li .nav-sity-inf-city {
     font-size: 18px;
   }
+  .nav-sity-inf .nav-sity-inf-date {
+    font-size: 11px;
+  }
 }
 @media only screen and (max-width: 767px) {
   nav .container-fluid .navbar-phone {
@@ -29,13 +40,10 @@
     font-size: 16px;
   }
   nav .nav-sity-inf .nav-sity-inf-date {
-    font-size: 12px;
+    font-size: 10px;
   }
   main .cont .row .main-title h2 {
     font-size: 26px;
-  }
-  main .nav-sticky {
-    margin-top: 30px;
   }
   main .nav-pills {
     height: 79px;
@@ -49,7 +57,6 @@
 }
 @media only screen and (max-width: 550px) {
   header .header-carousel .header-carousel-image {
-    height: 270px;
     border-radius: 25px;
   }
   header nav .container-fluid .nav-class {
@@ -103,6 +110,18 @@
   main .cont .row .card .card-body .card-text {
     font-size: 14px;
   }
+  main .cont .row .card .card-body2 {
+    padding-left: 10px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  main .cont .row .card .card-body2 .card-text2 {
+    font-size: 14px;
+  }
+  main .cont .row .card .card-body2 .card-title2 {
+    font-size: 14px;
+  }
   main .cont .row .card .btn {
     height: 35px;
     font-size: 18px;
@@ -110,8 +129,14 @@
     justify-content: center;
     align-items: center;
   }
+  main .nav-sticky {
+    padding-top: 5px;
+  }
+  main .nav-pills {
+    height: 110px;
+  }
   main .nav-pills .nav-item {
-    font-size: 13.1px;
+    font-size: 18px;
   }
   main .nav-sticky :hover {
     color: #000;
@@ -153,7 +178,6 @@
     margin-top: 2px;
   }
   header .header-carousel .header-carousel-image {
-    height: 260px;
     border-radius: 25px;
   }
   header .cart-body {
@@ -187,9 +211,6 @@
   }
   nav .nav-cart {
     display: none;
-  }
-  main .nav-sticky {
-    margin-top: 30px;
   }
   main .nav-pills {
     height: 100px;

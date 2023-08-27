@@ -70,6 +70,8 @@ update_goods()
     function scoreCartCount() {
         let countPlus = document.querySelectorAll(".count-plus")
         let countMinus = document.querySelectorAll(".count-minus") 
+        let soberiSamSushiInfo = JSON.parse(localStorage.getItem('soberiSamSushiInfo')) 
+
        
     for (let i = 0; i < countPlus.length; i++) {
         let goods = JSON.parse(localStorage.getItem('goods')) 
@@ -82,9 +84,17 @@ update_goods()
 
         countMinus[i].onclick = function() {   
             if (goods[i][4] == 1) {
+                if (goods[i][2] == "Собери сам") {
+                    soberiSamSushiInfo.length = 0
+                    localStorage.setItem('soberiSamSushiInfo', JSON.stringify(soberiSamSushiInfo))
+                    goods.splice(i, 1)
+                    localStorage.setItem('goods', JSON.stringify(goods))
+                    update_goods()
+                } else {
                 goods.splice(i, 1)
                 localStorage.setItem('goods', JSON.stringify(goods))
                 update_goods()
+                }
             } else {
                 goods[i].splice(4,1, goods[i][4] - 1)
                 localStorage.setItem('goods', JSON.stringify(goods))
@@ -156,6 +166,7 @@ update_goods()
        
     for (let i = 0; i < countOrderPlus.length; i++) {
         let goods = JSON.parse(localStorage.getItem('goods')) 
+        let soberiSamSushiInfo = JSON.parse(localStorage.getItem('soberiSamSushiInfo')) 
 
         countOrderPlus[i].onclick = function() {
             goods[i].splice(4,1, goods[i][4] + 1)
@@ -267,7 +278,7 @@ if(!localStorage.getItem('ordersInfo')) {
     let skidki = ["Skidos14", "loh2", "pidr"]
 
 
-    infoPromo.onblur = function() {
+  /*  infoPromo.onblur = function() {
         let ordersInfo = JSON.parse(localStorage.getItem('ordersInfo'))  
         if(infoPromo.value == "") {
             infoBox3.id = ""
@@ -294,7 +305,7 @@ if(!localStorage.getItem('ordersInfo')) {
                 }
 
             }
-        }
+        } */
 
 
 
@@ -313,11 +324,19 @@ let btnOrder = document.querySelector(".btn-order")
         if ((infoBox2.id == "valid") & (infoBox1.id == "valid") & (infoBox4.id == "valid")) {
             let goods = JSON.parse(localStorage.getItem('goods')) 
             let ordersInfo = JSON.parse(localStorage.getItem('ordersInfo')) 
+            let orderName = ""
             for (i = 0; i < goods.length; i++) {
-                ordersInfo.push( `Название: ${goods[i][2]}`, `Цена: ${goods[i][3]}`, `Количество: ${goods[i][4]}`)
+                if (goods[i][2] == "Собери сам") {
+                    orderName += ( `${goods[i][2]} - ${goods[i][4]} - ${goods[i][3]}₽ %0A (${goods[i][5]}) %0A `)   
+                } else {
+                orderName += ( `${goods[i][2]} - ${goods[i][4]} - ${goods[i][3]}₽ %0A`)
             }
-            ordersInfo.push(`Сумма скидки: ${orderSale.innerHTML}`, `Итоговая сумма: ${orderTotalCurrency.innerHTML}`,"---Данные заказчика---",`Имя: ${infoName.value}`, `Номер телефона: ${document.getElementById('ttt').value}`, `Адрес: ${infoAdres.value}`,`Промокод: ${infoPromo.value}`)
+            }
+            orderName += (`%0A %0A Сумма скидки: ${orderSale.innerHTML}%0A Итоговая сумма: ${orderTotalCurrency.innerHTML}%0A %0A  ---Данные заказчика---%0A %0A Имя: ${infoName.value}%0A Номер телефона: +${document.getElementById('ttt').value}%0A Адрес: ${infoAdres.value}%0A`)
+            ordersInfo.push(orderName)
+           // ordersInfo.push(`Сумма скидки: ${orderSale.innerHTML}%0A Итоговая сумма: ${orderTotalCurrency.innerHTML}%0A %0A  ---Данные заказчика---%0A %0A Имя: ${infoName.value}%0A Номер телефона: ${document.getElementById('ttt').value}%0A Адрес: ${infoAdres.value}%0A Промокод: ${infoPromo.value}%0A`)
             localStorage.setItem('ordersInfo', JSON.stringify(ordersInfo))
+            sendData()
         } else {
             window.location='#article'
  
@@ -327,4 +346,33 @@ let btnOrder = document.querySelector(".btn-order")
         }
 
 
+    }
+
+
+
+    function sendData() {
+/*
+        let title = `Название продукта : ${(document.querySelector("#title").value)}%0A`;
+        let amount = `Количество товара: ${document.querySelector("#amount").value}%0A`;
+        let price = `Цена: ${document.querySelector("#price").value}%0A`;
+        let phone = `Номер телефона: ${document.querySelector("#phone").value}%0A`;
+        let customer = `Имя покупателя: ${document.querySelector("#customer").value}%0A`; 
+    */
+        let ordersInfo = JSON.parse(localStorage.getItem('ordersInfo'))
+        let bot_id = "6500272445:AAHRe7lwQyATcgoPENlRwK9DoqI05IhiCgA"
+    
+        let user_id = "350423468"
+    
+        let url = `https://api.telegram.org/bot${bot_id}/sendMessage?chat_id=${user_id}&text=${ordersInfo}`
+    
+    
+        axios.get(url)
+            .then(function (response) {
+                console.log(response.data);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    
+    
     }

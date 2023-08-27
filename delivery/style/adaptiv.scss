@@ -1,9 +1,15 @@
+
+// screen and (max-width:1200px)
+@media (max-width: 1200px) {
+    main .nav-pills .nav-item {
+        font-size: 17px;
+    }
+}
+
+
 // screen and (max-width:992px)
 
 @media (max-width: 992px) {
-    .header-carousel {
-        width: 92%;
-    }
         .w-100 {
             height: 320px;
         }
@@ -12,8 +18,9 @@
         }
         main {
             .nav-pills {
+                height: 85px;
                 .nav-item {
-                    font-size: 15px;
+                    font-size: 19px;
                 }
             }
             .nav-sticky :hover {
@@ -26,6 +33,9 @@
         .nav-sity-inf {
             li .nav-sity-inf-city {
                 font-size: 18px;
+            }
+            .nav-sity-inf-date {
+                font-size: 11px;
             }
         }
 
@@ -48,28 +58,27 @@
 
 
 @media only screen and (max-width:767px) {
-        nav {
-            .container-fluid {
-                .navbar-phone {
-                    display: none;
-                }
-            }
-            .nav-sity-inf {
-                li a {
-                    font-size: 16px;
-                }
-            }
-            .nav-sity-inf {
-                .nav-sity-inf-date {
-                    font-size: 12px;
-                }
+    nav {
+        .container-fluid {
+            .navbar-phone {
+                display: none;
             }
         }
+        .nav-sity-inf {
+            li a {
+                font-size: 16px;
+            }
+        }
+        .nav-sity-inf {
+            .nav-sity-inf-date {
+                font-size: 10px;
+            }
+        }
+    }
         main .cont .row .main-title h2 {
             font-size: 26px
         }
         main {
-           
             .nav-pills {
                 height: 79px;
                 .nav-item {
@@ -133,10 +142,17 @@
         }
     }
     main {
+        .nav-sticky {
+            padding-top: 5px;
+        }
         .nav-pills {
+            height: 110px;
             .nav-item {
-                font-size: 13.1px;
+                font-size: 18px;
             }
+        }
+        .nav-sticky :hover {
+            color: #000;
         }
     }
 
@@ -218,9 +234,6 @@
         }
     }
     main {
-        .nav-sticky {
-            margin-top: 80px;
-        }
         .nav-pills {
             height: 100px;
             .nav-item {
