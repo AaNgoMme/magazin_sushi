@@ -79,6 +79,94 @@
         }
 
 
+    article {
+        h1 {
+            font-size: 26px;
+        }
+        .customer-information {
+            max-width: 500px;
+            .info-box1 {
+                .label-input {
+                    .info-name { 
+                        font-size: 18px;
+                    }
+                }
+            } 
+            .info-box2 {
+                .label-input {
+                    .info-tel { 
+                        font-size: 18px;
+                    }
+                }
+            } 
+            .info-box4 {
+                .label-input {
+                    .info-adres { 
+                        font-size: 18px;
+                    }
+                }
+            } 
+        }
+        .order-box {
+            h3 {
+                font-size: 24px;
+            }
+            .order {
+                .order-body {
+                    max-width: 510px;
+                    .order-image {
+                        width: 120px;
+                        img {
+                            width: 120px;
+                            height: 80px;
+                        }
+                    }
+                    .order-name {
+                        width: 200px;
+                        font-size: 18px;
+                    }
+                    .order-count {
+                        width: 100px;
+                        .order-count-minus {
+                            width: 26px;
+                            height: 26px;
+                        }
+                        .order-count-plus {
+                            width: 26px;
+                            height: 26px;
+                        }
+                    }
+                    span {
+                        margin-left: 0px;
+                        margin-right: 2px;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 18px;
+                    }
+                    .order-prise {
+                        width: 90px;
+                    }
+                }
+            }
+        } 
+        .order-total-price {
+            .order-total-summ { 
+                max-width: 500px;
+                .total-summ {
+                    font-size: 24px;
+                }
+            }
+            .order-total-sale {
+                max-width: 500px;
+            }
+            .order-total {
+                max-width: 500px;
+            }
+            .order-button {
+                max-width: 500px;
+            }
+        } 
+    }
+
 
 
 }
@@ -137,7 +225,121 @@
         }
     }
 
-
+    article {
+        margin-top: 50px;
+        h1 {
+            font-size: 24px;
+        }
+        .customer-information {
+            max-width: 380px;
+            .info-box1 {
+                .label-input {
+                    .info-name { 
+                        font-size: 17px;
+                    }
+                }
+                .info-name-span {
+                    top: 20px;
+                }
+            } 
+            .info-box2 {
+                .label-input {
+                    .info-tel { 
+                        font-size: 17px;
+                    }
+                }
+                .number-span {
+                    top: 20px;
+                }
+            } 
+            .info-box4 {
+                .label-input {
+                    .info-adres { 
+                        font-size: 16px;
+                    }
+                }
+                .adres-span {
+                    top: 20px;
+                }
+            } 
+        }
+        .order-box {
+            margin-bottom: 50px;
+            h3 {
+                font-size: 22px;
+            }
+            .order {
+                margin-top: 30px;
+                .order-body {
+                    max-width: 380px;
+                    .order-image {
+                        width: 75px;
+                        img {
+                            width: 75px;
+                            height: 60px;
+                        }
+                    }
+                    .order-name {
+                        width: 120px;
+                        font-size: 17px;
+                        margin-left: 8px;
+                    }
+                    .order-count {
+                        width: 100px;
+                        .order-count-minus {
+                            width: 26px;
+                            height: 26px;
+                        }
+                        .order-count-plus {
+                            width: 26px;
+                            height: 26px;
+                        }
+                    }
+                    span {
+                        margin-left: 0px;
+                        margin-right: 2px;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 17px;
+                    }
+                    .order-prise {
+                        margin-left: 10px;
+                        width: 90px;
+                    }
+                }
+            }
+        } 
+        .order-total-price {
+            .order-total-summ { 
+                max-width: 380px;
+                margin-top: 0px;
+                padding-bottom: 15px;
+                .total-summ {
+                    font-size: 22px;
+                }
+            }
+            .order-total-sale {
+                max-width: 380px;
+                margin-top: 10px;
+                padding-bottom: 15px;
+            }
+            .order-total {
+                max-width: 380px;
+                margin-top: 35px;
+                .order-summ {
+                    font-size: 24px;
+                }
+            }
+            .order-button {
+                max-width: 380px;
+                margin-top: 30px;
+                margin-bottom: 0px;
+                font-size: 24px;
+                .btn-order {
+                    font-size: 24px;
+                } 
+            }
+        } 
+    }
 
 
 
@@ -194,6 +396,138 @@
             }
         }
     }
+
+    article {
+        margin-top: 50px;
+        h1 {
+            font-size: 24px;
+        }
+        .customer-information {
+            max-width: 300px;
+            .info-box1 {
+                .label-input {
+                    .info-name { 
+                        font-size: 17px;
+                    }
+                }
+                .info-name-span {
+                    top: 20px;
+                }
+            } 
+            .info-box2 {
+                .label-input {
+                    .info-tel { 
+                        font-size: 17px;
+                    }
+                }
+                .number-span {
+                    top: 20px;
+                }
+            } 
+            .info-box4 {
+                .label-input {
+                    .info-adres { 
+                        font-size: 16px;
+                    }
+                }
+                .adres-span {
+                    top: 20px;
+                }
+            } 
+        }
+        .order-box {
+            margin-bottom: 50px;
+            h3 {
+                font-size: 22px;
+            }
+            .order {
+                margin-top: 30px;
+                .order-body {
+                    max-width: 300px;
+                    height: 60px;
+                    .order-image {
+                        display: none;
+                    }
+                    .order-name {
+                        width: 120px;
+                        font-size: 17px;
+                        margin-left: 8px;
+                    }
+                    .order-count {
+                        width: 100px;
+                        .order-count-minus {
+                            width: 26px;
+                            height: 26px;
+                        }
+                        .order-count-plus {
+                            width: 26px;
+                            height: 26px;
+                        }
+                    }
+                    span {
+                        margin-left: 0px;
+                        margin-right: 2px;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 17px;
+                    }
+                    .order-prise {
+                        margin-left: 10px;
+                        width: 90px;
+                    }
+                }
+            }
+        } 
+        .order-total-price {
+            .order-total-summ { 
+                max-width: 300px;
+                margin-top: 0px;
+                padding-bottom: 15px;
+                .total-summ {
+                    font-size: 18px;
+                }
+                .order-currency {
+                    font-size: 18px;
+                }
+            }
+            .order-total-sale {
+                max-width: 300px;
+                margin-top: 10px;
+                padding-bottom: 15px;
+                font-size: 18px;
+                .total-sale {
+                    font-size: 18px;
+                }
+                .order-sale {
+                    font-size: 18px;
+                }
+            }
+            .order-total {
+                max-width: 300px;
+                margin-top: 35px;
+                .order-summ {
+                    font-size: 20px;
+                }
+                .order-total-currency {
+                    font-size: 20px;
+                }
+            }
+            .order-button {
+                max-width: 300px;
+                margin-top: 30px;
+                margin-bottom: 0px;
+                font-size: 20px;
+                .btn-order {
+                    font-size: 20px;
+                } 
+            }
+        } 
+    }
+
+
+
+
+
+
     footer .container .row .footer-text {
         margin-top: 20px;
         margin-bottom: 20px;

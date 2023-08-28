@@ -310,8 +310,13 @@ if(!localStorage.getItem('ordersInfo')) {
 
 
 let btnOrder = document.querySelector(".btn-order")
-
-
+const myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+    keyboard: false
+  })
+const okModal = new bootstrap.Modal(document.getElementById('ok-modal'), {
+    keyboard: false
+  })
+let btnFinalOrder = document.querySelector(".btn-final-order")
 
 
     btnOrder.onclick = function() {
@@ -322,6 +327,8 @@ let btnOrder = document.querySelector(".btn-order")
             infoBox4.id = "invalid"
         }
         if ((infoBox2.id == "valid") & (infoBox1.id == "valid") & (infoBox4.id == "valid")) {
+            myModal.show()
+            btnFinalOrder.onclick = function() {
             let goods = JSON.parse(localStorage.getItem('goods')) 
             let ordersInfo = JSON.parse(localStorage.getItem('ordersInfo')) 
             let orderName = ""
@@ -337,12 +344,15 @@ let btnOrder = document.querySelector(".btn-order")
            // ordersInfo.push(`Сумма скидки: ${orderSale.innerHTML}%0A Итоговая сумма: ${orderTotalCurrency.innerHTML}%0A %0A  ---Данные заказчика---%0A %0A Имя: ${infoName.value}%0A Номер телефона: ${document.getElementById('ttt').value}%0A Адрес: ${infoAdres.value}%0A Промокод: ${infoPromo.value}%0A`)
             localStorage.setItem('ordersInfo', JSON.stringify(ordersInfo))
             sendData()
+            myModal.hide()
+            ordersInfo.length = 0
+            goods.length = 0
+            localStorage.setItem('goods', JSON.stringify(goods))
+            localStorage.setItem('ordersInfo', JSON.stringify(ordersInfo))
+            okModal.show()
+        }
         } else {
             window.location='#article'
- 
-            alert(infoBox2.id)
-            alert(infoBox1.id)
-            alert(infoBox4.id)
         }
 
 

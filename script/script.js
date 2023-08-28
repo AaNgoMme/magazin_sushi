@@ -152,18 +152,23 @@ if(!localStorage.getItem('ordersInfo')) {
 
 
 //pop-up messages for adding an item to the cart
-const toastTrigger = document.getElementById('liveToastBtn');
+const toastTrigger = document.querySelectorAll('#liveToastBtn');
 const toastLiveExample = document.getElementById('liveToast');
 let toastImg = document.querySelector(".toast-img");
 let toastTitle = document.querySelector(".toast-title");
+let modalTitleAll = document.querySelectorAll(".modal-card-title");
+let modalImgAll = document.querySelectorAll(".modal-img");
 
+for (let i = 0; i < toastTrigger.length; i++) {
 const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-toastTrigger.addEventListener('click', () => {
-    console.log("lohh")
-    toastImg.src = modalImg.src
-    toastTitle.innerHTML = modalTitle.innerHTML
-    toastBootstrap.show()
+    toastTrigger[i].addEventListener('click', () => {
+        console.log(toastTrigger)
+        toastImg.src = modalImgAll[i].src
+        toastTitle.innerHTML = modalTitleAll[i].innerHTML
+        toastBootstrap.show()
 });
+}
+
 
 
 //add cart to basket
@@ -173,7 +178,6 @@ let basketCountIconNumber = document.querySelector(".basket-count-icon-number")
 
 const addToCart = document.querySelector(".add-to-cart")
 let modalBodyCost = document.querySelector(".modal-body-cost")
-
 let comment = document.createElement('div');
 
 
@@ -401,8 +405,9 @@ for (let key of pizzaCheckbox) {
     }
 }
 
-    goods.push([goods.length, imgSoberiSushi.src, "Собери сам", 1200, 1, pizzaCartName.slice(0, -2)])
+    goods.push([goods.length, imgSoberiPizza.src, "Собери сам", 1200, 1, pizzaCartName.slice(0, -2)])
     localStorage.setItem('goods', JSON.stringify(goods))   
     update_goods() 
    
 } 
+

@@ -521,6 +521,18 @@ article .order-total-price .order-button .btn-order {
   background-color: #ea382c;
   border-radius: 15px;
 }
+article .modal .modal-title {
+  font-size: 24px;
+}
+article .modal .modal-body {
+  font-size: 20px;
+}
+article .modal .btn-primary {
+  font-size: 20px;
+}
+article .modal .btn-secondary {
+  font-size: 20px;
+}
 
 footer .footer-top-line {
   background-color: rgb(226, 226, 226);
@@ -632,6 +644,73 @@ footer .footer-end .end {
   main .nav-sticky :hover {
     color: #000;
   }
+  article h1 {
+    font-size: 26px;
+  }
+  article .customer-information {
+    max-width: 500px;
+  }
+  article .customer-information .info-box1 .label-input .info-name {
+    font-size: 18px;
+  }
+  article .customer-information .info-box2 .label-input .info-tel {
+    font-size: 18px;
+  }
+  article .customer-information .info-box4 .label-input .info-adres {
+    font-size: 18px;
+  }
+  article .order-box h3 {
+    font-size: 24px;
+  }
+  article .order-box .order .order-body {
+    max-width: 510px;
+  }
+  article .order-box .order .order-body .order-image {
+    width: 120px;
+  }
+  article .order-box .order .order-body .order-image img {
+    width: 120px;
+    height: 80px;
+  }
+  article .order-box .order .order-body .order-name {
+    width: 200px;
+    font-size: 18px;
+  }
+  article .order-box .order .order-body .order-count {
+    width: 100px;
+  }
+  article .order-box .order .order-body .order-count .order-count-minus {
+    width: 26px;
+    height: 26px;
+  }
+  article .order-box .order .order-body .order-count .order-count-plus {
+    width: 26px;
+    height: 26px;
+  }
+  article .order-box .order .order-body span {
+    margin-left: 0px;
+    margin-right: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+  }
+  article .order-box .order .order-body .order-prise {
+    width: 90px;
+  }
+  article .order-total-price .order-total-summ {
+    max-width: 500px;
+  }
+  article .order-total-price .order-total-summ .total-summ {
+    font-size: 24px;
+  }
+  article .order-total-price .order-total-sale {
+    max-width: 500px;
+  }
+  article .order-total-price .order-total {
+    max-width: 500px;
+  }
+  article .order-total-price .order-button {
+    max-width: 500px;
+  }
 }
 @media only screen and (max-width: 550px) {
   header .cart-body .cart-image img {
@@ -675,6 +754,107 @@ footer .footer-end .end {
   main .nav-sticky :hover {
     color: #000;
   }
+  article {
+    margin-top: 50px;
+  }
+  article h1 {
+    font-size: 24px;
+  }
+  article .customer-information {
+    max-width: 380px;
+  }
+  article .customer-information .info-box1 .label-input .info-name {
+    font-size: 17px;
+  }
+  article .customer-information .info-box1 .info-name-span {
+    top: 20px;
+  }
+  article .customer-information .info-box2 .label-input .info-tel {
+    font-size: 17px;
+  }
+  article .customer-information .info-box2 .number-span {
+    top: 20px;
+  }
+  article .customer-information .info-box4 .label-input .info-adres {
+    font-size: 16px;
+  }
+  article .customer-information .info-box4 .adres-span {
+    top: 20px;
+  }
+  article .order-box {
+    margin-bottom: 50px;
+  }
+  article .order-box h3 {
+    font-size: 22px;
+  }
+  article .order-box .order {
+    margin-top: 30px;
+  }
+  article .order-box .order .order-body {
+    max-width: 380px;
+  }
+  article .order-box .order .order-body .order-image {
+    width: 75px;
+  }
+  article .order-box .order .order-body .order-image img {
+    width: 75px;
+    height: 60px;
+  }
+  article .order-box .order .order-body .order-name {
+    width: 120px;
+    font-size: 17px;
+    margin-left: 8px;
+  }
+  article .order-box .order .order-body .order-count {
+    width: 100px;
+  }
+  article .order-box .order .order-body .order-count .order-count-minus {
+    width: 26px;
+    height: 26px;
+  }
+  article .order-box .order .order-body .order-count .order-count-plus {
+    width: 26px;
+    height: 26px;
+  }
+  article .order-box .order .order-body span {
+    margin-left: 0px;
+    margin-right: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+  }
+  article .order-box .order .order-body .order-prise {
+    margin-left: 10px;
+    width: 90px;
+  }
+  article .order-total-price .order-total-summ {
+    max-width: 380px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+  }
+  article .order-total-price .order-total-summ .total-summ {
+    font-size: 22px;
+  }
+  article .order-total-price .order-total-sale {
+    max-width: 380px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+  }
+  article .order-total-price .order-total {
+    max-width: 380px;
+    margin-top: 35px;
+  }
+  article .order-total-price .order-total .order-summ {
+    font-size: 24px;
+  }
+  article .order-total-price .order-button {
+    max-width: 380px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 24px;
+  }
+  article .order-total-price .order-button .btn-order {
+    font-size: 24px;
+  }
   footer .container .row .footer-image a img {
     height: 50px;
     width: 200px;
@@ -713,6 +893,117 @@ footer .footer-end .end {
   }
   main .nav-pills .nav-item {
     font-size: 14px;
+  }
+  article {
+    margin-top: 50px;
+  }
+  article h1 {
+    font-size: 24px;
+  }
+  article .customer-information {
+    max-width: 300px;
+  }
+  article .customer-information .info-box1 .label-input .info-name {
+    font-size: 17px;
+  }
+  article .customer-information .info-box1 .info-name-span {
+    top: 20px;
+  }
+  article .customer-information .info-box2 .label-input .info-tel {
+    font-size: 17px;
+  }
+  article .customer-information .info-box2 .number-span {
+    top: 20px;
+  }
+  article .customer-information .info-box4 .label-input .info-adres {
+    font-size: 16px;
+  }
+  article .customer-information .info-box4 .adres-span {
+    top: 20px;
+  }
+  article .order-box {
+    margin-bottom: 50px;
+  }
+  article .order-box h3 {
+    font-size: 22px;
+  }
+  article .order-box .order {
+    margin-top: 30px;
+  }
+  article .order-box .order .order-body {
+    max-width: 300px;
+    height: 60px;
+  }
+  article .order-box .order .order-body .order-image {
+    display: none;
+  }
+  article .order-box .order .order-body .order-name {
+    width: 120px;
+    font-size: 17px;
+    margin-left: 8px;
+  }
+  article .order-box .order .order-body .order-count {
+    width: 100px;
+  }
+  article .order-box .order .order-body .order-count .order-count-minus {
+    width: 26px;
+    height: 26px;
+  }
+  article .order-box .order .order-body .order-count .order-count-plus {
+    width: 26px;
+    height: 26px;
+  }
+  article .order-box .order .order-body span {
+    margin-left: 0px;
+    margin-right: 2px;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+  }
+  article .order-box .order .order-body .order-prise {
+    margin-left: 10px;
+    width: 90px;
+  }
+  article .order-total-price .order-total-summ {
+    max-width: 300px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+  }
+  article .order-total-price .order-total-summ .total-summ {
+    font-size: 18px;
+  }
+  article .order-total-price .order-total-summ .order-currency {
+    font-size: 18px;
+  }
+  article .order-total-price .order-total-sale {
+    max-width: 300px;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+  article .order-total-price .order-total-sale .total-sale {
+    font-size: 18px;
+  }
+  article .order-total-price .order-total-sale .order-sale {
+    font-size: 18px;
+  }
+  article .order-total-price .order-total {
+    max-width: 300px;
+    margin-top: 35px;
+  }
+  article .order-total-price .order-total .order-summ {
+    font-size: 20px;
+  }
+  article .order-total-price .order-total .order-total-currency {
+    font-size: 20px;
+  }
+  article .order-total-price .order-button {
+    max-width: 300px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  article .order-total-price .order-button .btn-order {
+    font-size: 20px;
   }
   footer .container .row .footer-text {
     margin-top: 20px;
